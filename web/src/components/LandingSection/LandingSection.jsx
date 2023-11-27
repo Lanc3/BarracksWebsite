@@ -36,10 +36,10 @@ const LandingSection = () => {
               </div> */}
             </div>
             <h1
-              className="h1 break-words bg-gradient-to-r from-[#2f570d] via-[#59b905] to-[#2f570d] bg-clip-text px-24 pb-4 text-transparent sm:px-24"
+              className="h1 break-words bg-gradient-to-r from-purple-500 to-purple-200 bg-clip-text px-24 pb-4 text-transparent sm:px-24"
               data-aos="fade-down"
             >
-              Welcome To The New Barrakcs Website
+              Welcome To The Barracks
             </h1>
             <p
               className="mb-8 break-words px-32 text-lg text-slate-300 sm:px-32"
@@ -56,26 +56,26 @@ const LandingSection = () => {
               data-aos-delay="400"
             >
               <div>
-                <a
+                <Link
                   className="btn group w-full bg-gradient-to-r from-white/80 via-white to-white/80 text-slate-900 transition duration-150 ease-in-out hover:bg-white"
-                  href="#0"
+                  to={routes.contactus()}
                 >
                   Book With Us{' '}
                   <span className="ml-1 tracking-normal text-purple-500 transition-transform duration-150 ease-in-out group-hover:translate-x-0.5">
                     -&gt;
                   </span>
-                </a>
+                </Link>
               </div>
               <div>
-                <a
+                <Link
                   className="btn w-full bg-slate-900 bg-opacity-25 text-slate-200 transition duration-150 ease-in-out hover:bg-opacity-30 hover:text-white"
-                  href="#0"
+                  to={routes.events()}
                 >
                   <span>See Our Events</span>
                   <span className="ml-1 tracking-normal text-purple-500 transition-transform duration-150 ease-in-out group-hover:translate-x-0.5">
                     -&gt;
                   </span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

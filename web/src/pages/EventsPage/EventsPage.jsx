@@ -90,7 +90,7 @@ const EventsPage = () => {
   return (
     <div className="mt-12 pb-12">
       <div className="sm:max-w-auto pointer-events-auto relative mx-auto -mt-12 min-h-[700px] max-w-5xl rounded-b-[3rem]  px-4 sm:px-2">
-        <Particles className="absolute inset-0 z-10 w-screen rounded-b-[3rem]" />
+        <Particles className="absolute inset-0 z-10 w-full rounded-b-[3rem]" />
         <div
           className=" absolute inset-0 z-20 -mx-28 overflow-hidden rounded-b-[3rem]"
           aria-hidden="true"
@@ -132,7 +132,7 @@ const EventsPage = () => {
           <div className="flex w-full flex-col pr-6">
             <AnimatedTitle title="Callendar" />
           </div>
-          <Particles className="absolute inset-0 z-10 w-screen rounded-b-[3rem]" />
+
           <EventCalendar EventsList={EventsList} />
         </div>
 

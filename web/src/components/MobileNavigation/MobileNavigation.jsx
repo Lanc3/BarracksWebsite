@@ -56,17 +56,17 @@ const MobileNavigation = () => {
                 key={'about'}
                 className="z-200 btn-sm relative inline-flex before:absolute before:inset-0 before:bg-purple-500 before:blur-md"
               >
-                <a
+                <Link
                   onClick={() => setOpen((prev) => !prev)}
                   className={
                     'btn-sm group relative w-full py-0.5 text-slate-300 shadow transition duration-150 ease-in-out [background:linear-gradient(theme(colors.purple.500),_theme(colors.purple.500))_padding-box,_linear-gradient(theme(colors.purple.500),_theme(colors.purple.200)_75%,_theme(colors.transparent)_100%)_border-box] before:pointer-events-none before:absolute before:inset-0 before:rounded-full before:bg-slate-800/50 hover:text-white'
                   }
-                  href={routes.events()}
+                  to={routes.events()}
                 >
                   <span className="flex gap-1 text-lg text-white hover:relative">
                     Events
                   </span>
-                </a>
+                </Link>
               </motion.li>
               <motion.li
                 initial={{ scale: 0, opacity: 0 }}
@@ -80,17 +80,17 @@ const MobileNavigation = () => {
                 key={'about'}
                 className="z-200 btn-sm relative inline-flex before:absolute before:inset-0 before:bg-purple-500 before:blur-md"
               >
-                <a
+                <Link
                   onClick={() => setOpen((prev) => !prev)}
                   className={
                     'btn-sm group relative w-full py-0.5 text-slate-300 shadow transition duration-150 ease-in-out [background:linear-gradient(theme(colors.purple.500),_theme(colors.purple.500))_padding-box,_linear-gradient(theme(colors.purple.500),_theme(colors.purple.200)_75%,_theme(colors.transparent)_100%)_border-box] before:pointer-events-none before:absolute before:inset-0 before:rounded-full before:bg-slate-800/50 hover:text-white'
                   }
-                  href={routes.menu()}
+                  to={routes.menu()}
                 >
                   <span className="flex gap-1 text-lg text-white hover:relative">
                     Menu
                   </span>
-                </a>
+                </Link>
               </motion.li>
               <motion.li
                 initial={{ scale: 0, opacity: 0 }}
@@ -104,17 +104,17 @@ const MobileNavigation = () => {
                 key={'about'}
                 className="z-200 btn-sm relative inline-flex before:absolute before:inset-0 before:bg-purple-500 before:blur-md"
               >
-                <a
+                <Link
                   onClick={() => setOpen((prev) => !prev)}
                   className={
                     'btn-sm group relative w-full py-0.5 text-slate-300 shadow transition duration-150 ease-in-out [background:linear-gradient(theme(colors.purple.500),_theme(colors.purple.500))_padding-box,_linear-gradient(theme(colors.purple.500),_theme(colors.purple.200)_75%,_theme(colors.transparent)_100%)_border-box] before:pointer-events-none before:absolute before:inset-0 before:rounded-full before:bg-slate-800/50 hover:text-white'
                   }
-                  href={routes.aboutus()}
+                  to={routes.aboutus()}
                 >
                   <span className="flex gap-1 text-lg text-white hover:relative">
                     About Us
                   </span>
-                </a>
+                </Link>
               </motion.li>
               <motion.li
                 initial={{ scale: 0, opacity: 0 }}
@@ -128,17 +128,17 @@ const MobileNavigation = () => {
                 key={'about'}
                 className="z-200 btn-sm relative inline-flex before:absolute before:inset-0 before:bg-purple-500 before:blur-md"
               >
-                <a
+                <Link
                   onClick={() => setOpen((prev) => !prev)}
                   className={
                     'btn-sm group relative w-full py-0.5 text-slate-300 shadow transition duration-150 ease-in-out [background:linear-gradient(theme(colors.purple.500),_theme(colors.purple.500))_padding-box,_linear-gradient(theme(colors.purple.500),_theme(colors.purple.200)_75%,_theme(colors.transparent)_100%)_border-box] before:pointer-events-none before:absolute before:inset-0 before:rounded-full before:bg-slate-800/50 hover:text-white'
                   }
-                  href={routes.contactus()}
+                  to={routes.contactus()}
                 >
                   <span className="flex gap-1 text-lg text-white hover:relative">
                     Contact Us
                   </span>
-                </a>
+                </Link>
               </motion.li>
               <motion.li
                 initial={{ scale: 0, opacity: 0 }}
@@ -152,17 +152,17 @@ const MobileNavigation = () => {
                 key={'about'}
                 className="z-200 btn-sm relative inline-flex before:absolute before:inset-0 before:bg-purple-500 before:blur-md"
               >
-                <a
+                <Link
                   onClick={() => setOpen((prev) => !prev)}
                   className={
                     'btn-sm group relative w-full py-0.5 text-slate-300 shadow transition duration-150 ease-in-out [background:linear-gradient(theme(colors.purple.500),_theme(colors.purple.500))_padding-box,_linear-gradient(theme(colors.purple.500),_theme(colors.purple.200)_75%,_theme(colors.transparent)_100%)_border-box] before:pointer-events-none before:absolute before:inset-0 before:rounded-full before:bg-slate-800/50 hover:text-white'
                   }
-                  href={routes.roadmap()}
+                  to={routes.roadmap()}
                 >
                   <span className="flex gap-1 text-lg text-white hover:relative">
                     Roadmap
                   </span>
-                </a>
+                </Link>
               </motion.li>
             </ul>
           </motion.div>
