@@ -1,0 +1,16 @@
+/* CloudShape.module.css */
+
+.cloud-shape {
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+.cloud-background {
+
+  margin: 0px 0px;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+  -webkit-clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+}

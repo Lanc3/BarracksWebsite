@@ -1,0 +1,35 @@
+.highlighted-event {
+  background-color: #35B8DF; /* Background color for highlighted events */
+  color: white; /* Text color for highlighted events */
+  border-radius: 4px; /* Add rounded corners to the event */
+  padding: 4px; /* Add some padding for better readability */
+  font-weight: bold; /* Make the text bold for emphasis */
+  cursor: pointer; /* Change the cursor to a pointer when hovering over an event */
+  transition: background-color 0.3s;
+  text-align: center; /* Add a smooth transition effect for background color */
+}
+
+/* Style when hovering over the highlighted event */
+.highlighted-event:hover {
+  background-color: black;
+
+}
+.fc-day-today {
+  background: #0ea3e833 !important;
+
+}
+.fc-toolbar-title{
+  color:#35B8DF;
+}
+.fc-media-screen{
+
+}
+.fc{
+
+}
+#backdrop {
+
+}
+#calendar {
+
+}
