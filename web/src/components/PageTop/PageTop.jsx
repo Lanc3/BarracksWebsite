@@ -20,14 +20,14 @@ const PageTop = ({ title, content, children }) => {
           {/* Hero content */}
           <div className="mx-auto max-w-3xl text-center">
             <h1
-              className="h1 bg-gradient-to-r from-[#498294] via-[#35B8DF] to-[#498294] bg-clip-text pb-4 text-transparent"
+              className="h1 break-words bg-gradient-to-r from-[#498294] via-[#35B8DF] to-[#498294] bg-clip-text px-32 pb-4 text-transparent sm:px-32"
               data-aos="fade-down"
             >
               {title}
             </h1>
             <AnimatedTitle title="" />
             <p
-              className="mb-8 text-lg text-slate-300"
+              className="mx-auto mb-8 break-words px-32 text-lg text-slate-300 sm:px-24 lg:px-8"
               data-aos="fade-down"
               data-aos-delay="200"
             >

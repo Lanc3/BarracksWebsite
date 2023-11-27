@@ -4,7 +4,7 @@ import Illustration from '../../../public/glow-bottom.svg'
 import Particles from '../Particles/Particles'
 const LandingSection = () => {
   return (
-    <div className="sm:max-w-auto relative mx-auto min-h-[600px] max-w-6xl px-4  sm:px-2">
+    <div className="sm:max-w-auto relative mx-auto min-h-[600px] max-w-6xl break-words  px-4 sm:px-2">
       <Particles className="absolute inset-0 z-10 w-screen" />
       <div
         className=" absolute inset-0 z-20 -mx-28 overflow-hidden rounded-b-[3rem]"
@@ -36,13 +36,13 @@ const LandingSection = () => {
               </div> */}
             </div>
             <h1
-              className="h1 bg-gradient-to-r from-[#2f570d] via-[#59b905] to-[#2f570d] bg-clip-text pb-4 text-transparent"
+              className="h1 break-words bg-gradient-to-r from-[#2f570d] via-[#59b905] to-[#2f570d] bg-clip-text px-24 pb-4 text-transparent sm:px-24"
               data-aos="fade-down"
             >
               Welcome To The New Barrakcs Website
             </h1>
             <p
-              className="mb-8 text-lg text-slate-300"
+              className="mb-8 break-words px-32 text-lg text-slate-300 sm:px-32"
               data-aos="fade-down"
               data-aos-delay="200"
             >
