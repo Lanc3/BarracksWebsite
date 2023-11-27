@@ -17,7 +17,7 @@ const LandingSection = () => {
             alt="Hero Illustration"
           />
         </div>
-        <div className="z-30 pb-16 pt-32 md:pb-16 md:pt-52">
+        <div className="z-30 pb-16 pt-32 md:pb-16 ">
           {/* Hero content */}
           <div className="mx-auto max-w-3xl text-center">
             <div className="mb-6" data-aos="fade-down">

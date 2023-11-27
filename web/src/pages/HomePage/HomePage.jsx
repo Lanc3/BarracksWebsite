@@ -8,8 +8,8 @@ import LandingSection from 'src/components/LandingSection/LandingSection'
 import SliderGallary from 'src/components/SliderGallary/SliderGallary'
 const HomePage = () => {
   return (
-    <div className="">
-      <div className=" ">{/* <BackgroundGallary /> */}</div>
+    <div className="mb-24 overflow-hidden">
+      <div className="">{/* <BackgroundGallary /> */}</div>
 
       <LandingSection />
       <Clients />

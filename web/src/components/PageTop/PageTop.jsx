@@ -3,20 +3,20 @@ import AnimatedTitle from '../AnimatedTitle/AnimatedTitle'
 import Particles from '../Particles/Particles'
 const PageTop = ({ title, content }) => {
   return (
-    <div className="relative mx-32 -mt-12 h-[300px] rounded-b-[3rem] px-16 ">
+    <div className="sm:max-w-auto relative mx-auto -mt-12 min-h-[600px] max-w-5xl rounded-b-[3rem]  px-4 sm:px-2">
       <Particles className="absolute inset-0 z-10 w-screen rounded-b-[3rem]" />
       <div
         className=" absolute inset-0 z-20 -mx-28 overflow-hidden rounded-b-[3rem]"
         aria-hidden="true"
       >
-        <div className="absolute bottom-0 left-1/2 -z-10 -translate-x-1/3 rounded-b-[3rem]">
+        <div className="absolute bottom-0 left-1/2 -z-10 -translate-x-1/2 rounded-b-[3rem]">
           <img
             src={Illustration}
             className="max-w-none"
             alt="Hero Illustration"
           />
         </div>
-        <div className="z-30 pb-16 pt-20 md:pb-16 md:pt-16">
+        <div className="z-30 pb-2 pt-20 md:pb-2 md:pt-16">
           {/* Hero content */}
           <div className="mx-auto max-w-3xl text-center">
             <h1

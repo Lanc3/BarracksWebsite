@@ -39,7 +39,7 @@ const MenuPage = () => {
   }
   return (
     <div>
-      <div className="mt-12 flex w-full flex-col ">
+      <div className="mt-12 ">
         <PageTop
           title={'Our Cocktail Menu'}
           content={

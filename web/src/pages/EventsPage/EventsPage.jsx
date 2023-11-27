@@ -5,6 +5,7 @@ import AnimatedTitle from 'src/components/AnimatedTitle/AnimatedTitle'
 import EventCalendar from 'src/components/EventCalendar/EventCalendar'
 import EventSlider from 'src/components/EventSlider/EventSlider'
 import PageTop from 'src/components/PageTop/PageTop'
+import Particles from 'src/components/Particles/Particles'
 import SlickSlider from 'src/components/SlickSlider/SlickSlider'
 
 import AfterDarkImage from '../../../public/AfterDarkImage.png'
@@ -12,11 +13,11 @@ import BrendanImage from '../../../public/BrendanImage.png'
 import DaleBulgerImage from '../../../public/DaleImage.png'
 import DarraghImage from '../../../public/DarraghImage.png'
 import GintyImage from '../../../public/GintyImage.png'
+import Illustration from '../../../public/glow-bottom.svg'
 import JhonnyFingerImage from '../../../public/JhonnyFingersImage.png'
 import MiniImage from '../../../public/MiniImage.png'
 import MorImage from '../../../public/MorImage.png'
 import MossyImage from '../../../public/MossyImage.png'
-
 const EventsPage = () => {
   const EventsList = [
     {
@@ -87,34 +88,57 @@ const EventsPage = () => {
     },
   ]
   return (
-    <div className="mt-12">
-      <PageTop
-        title={'Upcoming Events'}
-        content={
-          'Our Acts are Diffrent Every Week, Stay Tuned For Any Updates On Our Socials'
-        }
-      />
-      <div className="-mr-10 mt-24 origin-bottom -rotate-2 bg-[#693d97] p-8 shadow-md drop-shadow-[0_15px_15px_rgba(211,44,255,0.3)]">
-        <div className="origin-bottom rotate-2">
-          <div className="flex w-full flex-col pr-6">
-            <AnimatedTitle title="Events" />
+    <div className="mt-12 pb-12">
+      <div className="sm:max-w-auto pointer-events-auto relative mx-auto -mt-12 min-h-[700px] max-w-5xl rounded-b-[3rem]  px-4 sm:px-2">
+        <Particles className="absolute inset-0 z-10 w-screen rounded-b-[3rem]" />
+        <div
+          className=" absolute inset-0 z-20 -mx-28 overflow-hidden rounded-b-[3rem]"
+          aria-hidden="true"
+        >
+          <div className="absolute bottom-0 left-1/2 -z-10 -translate-x-1/2 rounded-b-[3rem]">
+            <img
+              src={Illustration}
+              className="max-w-none"
+              alt="Hero Illustration"
+            />
           </div>
+          <div className="z-30 pb-2 pt-20 md:pb-2 md:pt-16">
+            {/* Hero content */}
+            <div className="mx-auto max-w-3xl text-center">
+              <h1
+                className="h1 bg-gradient-to-r from-[#498294] via-[#35B8DF] to-[#498294] bg-clip-text pb-4 text-transparent"
+                data-aos="fade-down"
+              >
+                Upcoming Events
+              </h1>
+              <AnimatedTitle title="" />
+              <p
+                className="mb-8 text-lg text-slate-300"
+                data-aos="fade-down"
+                data-aos-delay="200"
+              >
+                Our Acts are Diffrent Every Week, Stay Tuned For Any Updates On
+                Our Socials, Check Out Our Atcs Below, Click on the sides
+              </p>
+            </div>
+          </div>
+          <div className="z-50">
+            <SlickSlider EventsList={EventsList} />
+          </div>
+        </div>
+      </div>
+      <div className="mt-24 origin-bottom  bg-[#693d97] bg-opacity-0 p-8 ">
+        <div className="origin-bottom ">
+          <div className="flex w-full flex-col pr-6">
+            <AnimatedTitle title="Callendar" />
+          </div>
+          <Particles className="absolute inset-0 z-10 w-screen rounded-b-[3rem]" />
           <EventCalendar EventsList={EventsList} />
         </div>
 
         {/* <div className="bg-[#693D97] p-4 mb-6">
         <p className="text-center">Get ready to groove and dance the night away with an electrifying lineup of bands and DJs that will set the stage on fire. From chart-topping artists delivering unforgettable live performances to world-class DJs spinning the latest beats, our events are a musical paradise for enthusiasts. Whether you're into rock, pop, electronic, or any genre in between, our concerts and club nights promise to keep you in the rhythm of the night. So, grab your dancing shoes and join us for an unforgettable experience with the hottest acts in town. Your next music adventure starts here!</p>
         </div> */}
-      </div>
-      <div className="mb-24 mt-24 flex w-full flex-col">
-        <div className="-ml-10 mt-24 origin-bottom rotate-2 bg-[#693d97] p-8 shadow-md drop-shadow-[0_15px_15px_rgba(211,44,255,0.3)]">
-          <div className="origin-bottom -rotate-2">
-            <div className="pl-8">
-              <AnimatedTitle title="Our Acts" />
-              <SlickSlider EventsList={EventsList} />
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   )

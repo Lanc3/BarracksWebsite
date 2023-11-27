@@ -1,6 +1,6 @@
 .highlighted-event {
-  background-color: #35B8DF; /* Background color for highlighted events */
-  color: white; /* Text color for highlighted events */
+  background-color: #0ea3e833; /* Background color for highlighted events */
+  color: purple; /* Text color for highlighted events */
   border-radius: 4px; /* Add rounded corners to the event */
   padding: 4px; /* Add some padding for better readability */
   font-weight: bold; /* Make the text bold for emphasis */
@@ -11,7 +11,7 @@
 
 /* Style when hovering over the highlighted event */
 .highlighted-event:hover {
-  background-color: black;
+  background-color: #693C97;
 
 }
 .fc-day-today {
@@ -21,11 +21,18 @@
 .fc-toolbar-title{
   color:#35B8DF;
 }
-.fc-media-screen{
-
+.fc-event-title{
+color:#35B8DF;
 }
-.fc{
-
+.fc-view{
+  border-radius: 24px !important;
+  border-collapse: separate !important;
+}
+.fc-col-header-cell-cushion{
+  color:white;
+}
+.fc-daygrid-day-number{
+  color:white;
 }
 #backdrop {
 
