@@ -224,12 +224,8 @@ export default function Particles({
   }
 
   return (
-    <div className="absolute h-screen w-full" aria-hidden="true">
-      <canvas
-        ref={canvasRef}
-        height={window.innerHeight}
-        className="flex w-full"
-      />
+    <div className="absolute max-h-[100px] w-full" aria-hidden="true">
+      <canvas ref={canvasRef} height={window.innerHeight} className=" w-full" />
     </div>
   )
 }

@@ -3,10 +3,12 @@ import { MetaTags } from '@redwoodjs/web'
 
 import AnimatedTitle from 'src/components/AnimatedTitle/AnimatedTitle'
 import MapDirections from 'src/components/MapDirections/MapDirections'
+import PageTop from 'src/components/PageTop/PageTop'
 import TeamSection from 'src/components/TeamSection/TeamSection'
 const AboutusPage = () => {
   return (
-    <>
+    <div className="mt-12">
+      <PageTop title={'test'} content={'test'} />
       <div className=" -mx-4">
         <div className=" -z-30 mx-auto py-12">
           <div className="-z-30 origin-bottom -rotate-2 rounded-lg bg-[#693d97] p-8 text-center shadow-md drop-shadow-[0_15px_15px_rgba(211,44,255,0.3)]">
@@ -51,7 +53,7 @@ const AboutusPage = () => {
           <MapDirections />
         </div>
       </div>
-    </>
+    </div>
   )
 }
 

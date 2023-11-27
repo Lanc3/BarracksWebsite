@@ -15,7 +15,7 @@ export default function ContactSection() {
   const [tab, setTab] = useState(1)
 
   return (
-    <section className="rounded-t-[3rem]">
+    <section className="mb-44 rounded-t-[3rem]">
       <Particles
         className="absolute inset-0 -z-10"
         quantity={8}

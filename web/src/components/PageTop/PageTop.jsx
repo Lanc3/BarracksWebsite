@@ -1,7 +1,7 @@
 import Illustration from '../../../public/glow-bottom.svg'
 import AnimatedTitle from '../AnimatedTitle/AnimatedTitle'
 import Particles from '../Particles/Particles'
-const PageTop = ({ title, content }) => {
+const PageTop = ({ title, content, children }) => {
   return (
     <div className="sm:max-w-auto relative mx-auto -mt-12 min-h-[600px] max-w-5xl rounded-b-[3rem]  px-4 sm:px-2">
       <Particles className="absolute inset-0 z-10 w-screen rounded-b-[3rem]" />
@@ -33,6 +33,7 @@ const PageTop = ({ title, content }) => {
             >
               {content}
             </p>
+            <div>{children}</div>
           </div>
         </div>
       </div>
