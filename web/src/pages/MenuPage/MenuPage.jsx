@@ -41,7 +41,7 @@ const MenuPage = () => {
     <div>
       <div className="md:-mt-20 sm:mt-20">
         <PageTop
-          title={'Our Cocktail Menu'}
+          title={'Our Cocktails Menu'}
           content={
             'Check out our Cocktail menu, Keep an eye out we add new cocktails every week'
           }
