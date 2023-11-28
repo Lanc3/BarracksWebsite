@@ -5,7 +5,12 @@ import { useEffect } from 'react'
 import Client01 from '/BrendanText.svg'
 import Client02 from '/GintyText.svg'
 import Client03 from '/afterdarkText.svg'
-
+import Client04 from '/morText.svg'
+import Client05 from '/Mini.svg'
+import Client06 from '/mossyText.svg'
+import Client07 from '/dooleysText.svg'
+import Client08 from '/jhonnyText.svg'
+import Client09 from '/darraghText.svg'
 // Import Swiper
 import Swiper from 'swiper'
 import { Autoplay } from 'swiper/modules'
@@ -80,7 +85,7 @@ export default function Clients() {
                 </div>
                 <div className="swiper-slide !w-auto">
                   <img
-                    src={Client01}
+                    src={Client04}
                     alt="Client 04"
                     width={150}
                     height={150}
@@ -88,7 +93,7 @@ export default function Clients() {
                 </div>
                 <div className="swiper-slide !w-auto">
                   <img
-                    src={Client01}
+                    src={Client05}
                     alt="Client 05"
                     width={150}
                     height={150}
@@ -96,7 +101,7 @@ export default function Clients() {
                 </div>
                 <div className="swiper-slide !w-auto">
                   <img
-                    src={Client01}
+                    src={Client06}
                     alt="Client 06"
                     width={150}
                     height={150}
@@ -104,7 +109,7 @@ export default function Clients() {
                 </div>
                 <div className="swiper-slide !w-auto">
                   <img
-                    src={Client01}
+                    src={Client07}
                     alt="Client 07"
                     width={150}
                     height={150}
@@ -112,7 +117,7 @@ export default function Clients() {
                 </div>
                 <div className="swiper-slide !w-auto">
                   <img
-                    src={Client01}
+                    src={Client08}
                     alt="Client 08"
                     width={150}
                     height={150}
@@ -121,12 +126,21 @@ export default function Clients() {
                 <div className="swiper-slide !w-auto">
                   <img
                     className="mt-2"
-                    src={Client01}
+                    src={Client09}
                     alt="Client 09"
                     width={150}
                     height={150}
                   />
                 </div>
+                {/* <div className="swiper-slide !w-auto">
+                  <img
+                    className="mt-2"
+                    src={Client10}
+                    alt="Client 10"
+                    width={150}
+                    height={150}
+                  />
+                </div> */}
               </div>
             </div>
           </div>

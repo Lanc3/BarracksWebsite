@@ -33,7 +33,7 @@ const Header = () => {
   // Use the scrollY value to trigger the animation
 
   return (
-    <div className="left-0 right-0 top-0 z-50 max-h-20 w-screen  border-b border-neutral-700 drop-shadow-[0_15px_15px_rgba(211,44,255,0.3)]">
+    <div className="left-0 right-0 top-0 z-50 max-h-20 w-screen drop-shadow-[0_15px_15px_rgba(211,44,255,0.3)]">
       <MoblieNavigation />
       <DesktopNavigation />
     </div>

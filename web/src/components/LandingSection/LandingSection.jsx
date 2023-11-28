@@ -4,7 +4,7 @@ import Illustration from '../../../public/glow-bottom.svg'
 import Particles from '../Particles/Particles'
 const LandingSection = () => {
   return (
-    <div className="sm:max-w-auto relative mx-auto min-h-[600px] max-w-6xl break-words  px-4 sm:px-2">
+    <div className="sm:max-w-auto relative -mt-20 mx-auto min-h-[600px] max-w-6xl break-words  px-4 sm:px-2">
       <Particles className="absolute inset-0 z-10 w-screen" />
       <div
         className=" absolute inset-0 z-20 -mx-28 overflow-hidden rounded-b-[3rem]"

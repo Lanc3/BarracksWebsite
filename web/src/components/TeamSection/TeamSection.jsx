@@ -2,8 +2,9 @@ import AnimatedTitle from '../AnimatedTitle/AnimatedTitle'
 
 const TeamSection = () => {
   return (
-    <section className="-ml-28 mt-24 origin-bottom rotate-2 bg-[#693d97]">
-      <div className="origin-bottom -rotate-2 px-4 py-8 pl-24 text-center lg:px-6 lg:py-16">
+    <section className=" mt-24 origin-bottom  ">
+
+      <div className="origin-bottom  px-4 py-8 pl-24 text-center lg:px-6 lg:py-16">
         <div className="mx-auto mb-8 max-w-screen-sm lg:mb-16">
           <AnimatedTitle title={'Our Team'} />
           <p className="font-light text-gray-500 dark:text-gray-400 sm:text-xl">
@@ -11,6 +12,18 @@ const TeamSection = () => {
             members
           </p>
         </div>
+
+        <div className="max-md:hidden absolute bottom-0 -mb-20 left-2/3 -translate-x-1/2 translate-y-2/3 blur-2xl opacity-70 pointer-events-none" aria-hidden="true" >
+              <svg xmlns="http://www.w3.org/2000/svg" width="434" height="427">
+                <defs>
+                  <linearGradient id="bs5-a" x1="19.609%" x2="50%" y1="14.544%" y2="100%">
+                    <stop offset="0%" stopColor="#A855F7" />
+                    <stop offset="100%" stopColor="#6366F1" stopOpacity="0" />
+                  </linearGradient>
+                </defs>
+                <path fill="url(#bs5-a)" fillRule="evenodd" d="m661 736 461 369-284 58z" transform="matrix(1 0 0 -1 -661 1163)" />
+              </svg>
+            </div>
         <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:gap-16">
           <div className="text-center text-gray-500 dark:text-gray-400">
             <img
@@ -1966,6 +1979,7 @@ const TeamSection = () => {
                 </a>
               </li>
             </ul>
+
           </div>
         </div>
       </div>

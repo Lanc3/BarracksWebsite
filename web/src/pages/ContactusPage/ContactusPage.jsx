@@ -5,7 +5,7 @@ import AnimatedTitle from 'src/components/AnimatedTitle/AnimatedTitle'
 import PageTop from 'src/components/PageTop/PageTop'
 const ContactusPage = () => {
   return (
-    <div className="mt-12 h-screen">
+    <div className="-mt-20 h-screen">
       <PageTop
         title={'Contact Us'}
         content={

@@ -39,7 +39,7 @@ const MenuPage = () => {
   }
   return (
     <div>
-      <div className="mt-12 ">
+      <div className="md:-mt-20 sm:mt-20">
         <PageTop
           title={'Our Cocktail Menu'}
           content={
@@ -302,32 +302,7 @@ const MenuPage = () => {
           ]}
         />
       </div>
-
-      {/* <MenuItem name={"Bahama Mama"} blurb={`Imagine a vibrant, sun-kissed paradise in a glass, where waves
-  of tantalizing flavors collide to create the ultimate beachside
-  escape. The Sex on the Beach cocktail is a tropical masterpiece
-  that will transport your taste buds to a world of pure delight.`} ingrediants={["Coconut Rum", "White Rum", "Pineapple Juice", "Orange Juice","Grenadine"]} />
-      <MenuItem name={"Bee's Knee's"} blurb={"hellow"} ingrediants={["Gin", "Passion Fruit Liquor", "Fresh Lime Juice", "Local Organic Honey"]} />
-      <MenuItem name={"Zombie"} blurb={"blurb"} ingrediants={["alc 1", "alc 2", "alc 3", "alc 4"]} />
-      <MenuItem name={"Blue Lagoon"} blurb={"blurb"} ingrediants={["alc 1", "alc 2", "alc 3", "alc 4"]} />
-      <MenuItem name={"Margarita"} blurb={"blurb"} ingrediants={["alc 1", "alc 2", "alc 3", "alc 4"]} />
-      <MenuItem name={"Porn Star Martini"} blurb={"blurb"} ingrediants={["alc 1", "alc 2", "alc 3", "alc 4"]} />
-      <MenuItem name={"Sex On The Beach"} blurb={"blurb"} ingrediants={["alc 1", "alc 2", "alc 3", "alc 4"]} />
-      <MenuItem name={"Daquiri"} blurb={"blurb"} ingrediants={["alc 1", "alc 2", "alc 3", "alc 4"]} />
-      <MenuItem name={"Cosmopolitan"} blurb={"blurb"} ingrediants={["alc 1", "alc 2", "alc 3", "alc 4"]} />
-      <MenuItem name={"Long Island Iced Tea"} blurb={"blurb"} ingrediants={["alc 1", "alc 2", "alc 3", "alc 4"]} />
-      <MenuItem name={"Mojito"} blurb={"blurb"} ingrediants={["alc 1", "alc 2", "alc 3", "alc 4"]} />
-      <MenuItem name={"Barracks Blue-Woo"} blurb={"blurb"} ingrediants={["alc 1", "alc 2", "alc 3", "alc 4"]} />
-      <MenuItem name={"Whiskey Sour"} blurb={"blurb"} ingrediants={["alc 1", "alc 2", "alc 3", "alc 4"]} />
-      <MenuItem name={"Melon Sour"} blurb={"blurb"} ingrediants={["alc 1", "alc 2", "alc 3", "alc 4"]} />
-      <MenuItem name={"Amaretto Sour"} blurb={"blurb"} ingrediants={["alc 1", "alc 2", "alc 3", "alc 4"]} />
-      <MenuItem name={"Sour Barbie"} blurb={"blurb"} ingrediants={["alc 1", "alc 2", "alc 3", "alc 4"]} />
-      <MenuItem name={"Appletini-Weenie"} blurb={"blurb"} ingrediants={["alc 1", "alc 2", "alc 3", "alc 4"]} />
-      <MenuItem name={"Nebula"} blurb={"blurb"} ingrediants={["alc 1", "alc 2", "alc 3", "alc 4"]} />
-      <MenuItem name={"Captain Marvel"} blurb={"blurb"} ingrediants={["alc 1", "alc 2", "alc 3", "alc 4"]} />
-      <MenuItem name={"Slush Daquiri"} blurb={"blurb"} ingrediants={["alc 1", "alc 2", "alc 3", "alc 4"]} />
-      <MenuItem name={"Passionate One"} blurb={"blurb"} ingrediants={["alc 1", "alc 2", "alc 3", "alc 4"]} /> */}
-    </div>
+</div>
   )
 }
 

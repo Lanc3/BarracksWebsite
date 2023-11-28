@@ -11,7 +11,7 @@ const AnimatedLogo = () => {
     transition: { duration: 1, repeat: Infinity, repeatDelay: 3 }, // 3-second delay and infinite repeat
   }
   const radioAnimation = {
-    scale: [1, 12], // Scale values for the animation
+    scale: [1, 8], // Scale values for the animation
     opacity: [1, 0],
     transition: { duration: 3, repeat: Infinity, repeatDelay: 1 }, // 3-second delay and infinite repeat
   }
@@ -32,8 +32,8 @@ const AnimatedLogo = () => {
         initial={{ scale: 1 }} // Initial scale
         animate={controls}
       >
-        <div className="pl-4">
-          <img src={Logo} className="  w-14 rounded-full" alt="" />
+        <div className="pl-6 pt-2">
+          <img src={Logo} className="  w-14 rounded-full mb-12" alt="" />
         </div>
       </motion.div>
     </>

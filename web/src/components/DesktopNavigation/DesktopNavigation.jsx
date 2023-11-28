@@ -16,11 +16,11 @@ const DesktopNavigation = () => {
 
   return (
     <motion.header
-      className="lg:visable hidden gap-5 text-sm lg:flex lg:items-center"
+      className=" gap-5 text-sm lg:flex lg:items-center hidden lg:visable md:hidden"
       initial={{ opacity: 1 }}
       animate={controls}
     >
-      <nav className="sticky top-0 z-50 w-screen overflow-hidden   ">
+      <nav className="sticky top-0 z-50 w-screen ">
         <div className="float-left flex">
           <div className="pl-4 sm:hidden">
             <Link to={routes.home()}>
@@ -30,7 +30,7 @@ const DesktopNavigation = () => {
         </div>
 
         {/* Add your header content here */}
-        <div className="font-general-medium right-0 m-0 mt-5 hidden items-center justify-center p-5 shadow-lg sm:ml-4 sm:mt-3 sm:flex sm:p-0 sm:shadow-none">
+        <div className="font-general-medium right-0 m-0 mt-5 items-center justify-center p-5 sm:ml-4 sm:mt-3 sm:flex sm:p-0 ">
           <div className="grid max-h-16 grid-cols-2 gap-4 ">
             <div className="float-left w-2/3">
               <Link to={routes.home()}>

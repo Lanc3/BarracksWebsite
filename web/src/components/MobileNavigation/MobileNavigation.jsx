@@ -17,7 +17,7 @@ const MobileNavigation = () => {
   return (
     <div
       ref={ref}
-      className="sticky top-0   float-right flex w-screen overflow-hidden bg-[#693D97] lg:hidden"
+      className="sticky top-0 sm:visable float-right flex w-screen overflow-hidden bg-[#693D97] lg:hidden md:visable lx:hidden"
     >
       <div className=" float-left flex max-h-20 w-full overflow-hidden">
         <Link to={routes.home()} className="m-2">
