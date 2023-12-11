@@ -4,9 +4,9 @@ import { useState, useRef, useEffect } from 'react'
 import { Transition } from '@headlessui/react'
 import Particles from '../Particles/Particles'
 
-import TestimonialImg01 from './dan.jpg'
-import TestimonialImg02 from './dan.jpg'
-import TestimonialImg03 from './dan.jpg'
+import TestimonialImg01 from './Joanne.JPG'
+import TestimonialImg02 from './Nicola.JPG'
+import TestimonialImg03 from './Tristan.JPG'
 import {Link,routes} from '@redwoodjs/router'
 
 const TeamHero = () => {
@@ -32,31 +32,31 @@ const TeamHero = () => {
   const items = [
     {
       img: TestimonialImg01,
-      quote: "Insert Quote",
+      quote: "We aim to grow a comunity around The Barracks",
       name: 'Joanne Feeney',
       role: 'General Manager'
     },
     {
       img: TestimonialImg02,
-      quote: "I have been using this product for a few weeks now and I am blown away by the results. My skin looks visibly brighter and smoother, and I have received so many compliments on my complexion.",
+      quote: "Shaping bartenders, one shake at a time, because excellence in mixology is not just a skill; it's a crafted journey of passion and precision.",
       name: 'Aaron Keating',
       role: 'Duity Manager'
     },
     {
-      img: TestimonialImg03,
-      quote: "As a busy professional, I don't have a lot of time to devote to working out. But with this fitness program, I have seen amazing results in just a few short weeks. The workouts are efficient and effective.",
+      img: TestimonialImg02,
+      quote: "Mixing spirits with smiles, we craft more than cocktails – we create memories on the rocks",
       name: 'Nicola Byrne',
       role: 'Head Mixoligist'
     },
     {
       img: TestimonialImg03,
-      quote: "As a busy professional, I don't have a lot of time to devote to working out. But with this fitness program, I have seen amazing results in just a few short weeks. The workouts are efficient and effective.",
+      quote: "At our bar, every pour is a pour-fect blend of craftsmanship and camaraderie.",
       name: 'Tristan McGrath',
       role: 'Supervisor'
     },
     {
       img: TestimonialImg03,
-      quote: "As a busy professional, I don't have a lot of time to devote to working out. But with this fitness program, I have seen amazing results in just a few short weeks. The workouts are efficient and effective.",
+      quote: "Turning pixels into stories and clicks into connections, our media man paints the canvas of our brand with a digital palette of creativity.",
       name: 'Jack Dempsey',
       role: 'Floor Supervisor'
     }
@@ -69,7 +69,7 @@ const TeamHero = () => {
     <div className="max-w-3xl mx-auto px-4 sm:px-6">
         <div className="relative pb-12 md:pb-20">
           <div className="flex w-full justify-center">
-          <h2 className="h2 bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 via-slate-200 to-slate-200/60 pb-6">Meet The Team</h2>
+          <h2 className="h2 bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 via-slate-200 to-slate-200/60 pb-6">Meet The Managment Team</h2>
           </div>
       {/* Particles animation */}
         <div className="absolute left-1/2 -translate-x-1/2 top-0 z-10 w-80 h-80 -mt-6">
@@ -95,7 +95,7 @@ const TeamHero = () => {
                   leaveTo="opacity-0 rotate-[60deg]"
                   beforeEnter={() => heightFix()}
                 >
-                  <img className="relative top-11 left-1/2 -translate-x-1/2 -translate-y-1/3 rounded-full" src={item.img} width={156} height={156} alt={item.name} />
+                  <img className="relative top-11 left-1/2 -translate-x-1/2 -translate-y-1/3 rounded-full" src={item.img} width={126} height={126} alt={item.name} />
                 </Transition>
               ))}
 

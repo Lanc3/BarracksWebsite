@@ -8,6 +8,7 @@ import LandingSection from 'src/components/LandingSection/LandingSection'
 import SliderGallary from 'src/components/SliderGallary/SliderGallary'
 import BookingPriceSection from 'src/components/BookingPriceSection/BookingPriceSection'
 import TeamHero from 'src/components/TeamHero/TeamHero'
+import OpeningTimetable from 'src/components/OpeningTimetable/OpeningTimetable'
 const HomePage = () => {
   return (
     <div className="mb-24 ">
@@ -16,6 +17,7 @@ const HomePage = () => {
       <ContactSection />
       <BookingPriceSection />
       <TeamHero />
+      <OpeningTimetable/>
       {/* <SliderGallary /> */}
       <MetaTags title="Home" description="Home page" />
     </div>
