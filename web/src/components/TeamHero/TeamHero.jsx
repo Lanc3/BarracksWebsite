@@ -4,9 +4,9 @@ import { useState, useRef, useEffect } from 'react'
 import { Transition } from '@headlessui/react'
 import Particles from '../Particles/Particles'
 
-import TestimonialImg01 from './Joanne.JPG'
-import TestimonialImg02 from './Nicola.JPG'
-import TestimonialImg03 from './Tristan.JPG'
+import TestimonialImg01 from './Joanne.jpg'
+import TestimonialImg02 from './Nicola.jpg'
+import TestimonialImg03 from './Tristan.jpg'
 import {Link,routes} from '@redwoodjs/router'
 
 const TeamHero = () => {
