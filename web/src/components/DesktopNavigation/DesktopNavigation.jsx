@@ -44,8 +44,8 @@ const DesktopNavigation = () => {
                 </Link>
               </div>
               <div className="col-span-1 inline-flex items-center bg-gradient-to-r from-purple-500 to-purple-200 bg-clip-text p-4 pb-3 font-medium text-transparent transition duration-300 ease-in-out hover:scale-110 hover:text-[#35B8DF]">
-                <Link to={routes.menu()}>
-                  <p className="whitespace-nowrap">Menu</p>
+                <Link to={routes.openingTimes()}>
+                  <p className="whitespace-nowrap">Opening Times</p>
                 </Link>
               </div>
               <div className="col-span-1 inline-flex items-center bg-gradient-to-r from-purple-500 to-purple-200 bg-clip-text p-4 pb-3 font-medium text-transparent transition duration-300 ease-in-out hover:scale-110 hover:text-[#35B8DF]">

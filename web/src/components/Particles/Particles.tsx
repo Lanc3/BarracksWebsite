@@ -14,7 +14,7 @@ interface ParticlesProps {
 
 export default function Particles({
   className = '',
-  quantity = 30,
+  quantity = 20,
   staticity = 50,
   ease = 50,
   refresh = false,
@@ -186,12 +186,12 @@ export default function Particles({
       }
       circle.x += circle.dx
       circle.y += circle.dy
-      circle.translateX +=
-        (mouse.current.x / (staticity / circle.magnetism) - circle.translateX) /
-        ease
-      circle.translateY +=
-        (mouse.current.y / (staticity / circle.magnetism) - circle.translateY) /
-        ease
+      // circle.translateX +=
+      //   (mouse.current.x / (staticity / circle.magnetism) - circle.translateX) /
+      //   ease
+      // circle.translateY +=
+      //   (mouse.current.y / (staticity / circle.magnetism) - circle.translateY) /
+      //   ease
 
       // Circle gets out of the canvas
       if (

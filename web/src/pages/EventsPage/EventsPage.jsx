@@ -88,44 +88,17 @@ const EventsPage = () => {
     },
   ]
   return (
-    <div className="mt-12 pb-12">
-      <div className="sm:max-w-auto pointer-events-auto relative mx-auto -mt-12 min-h-[700px] max-w-5xl rounded-b-[3rem]  px-4 sm:px-2">
+    <div className=" pb-12">
+      <div className="md:-mt-20 sm:mt-20">
         <Particles className="absolute inset-0 z-10 w-full rounded-b-[3rem]" />
-        <div
-          className=" absolute inset-0 z-20 -mx-28 overflow-hidden rounded-b-[3rem]"
-          aria-hidden="true"
-        >
-          <div className="absolute bottom-0 left-1/2 -z-10 -translate-x-1/2 rounded-b-[3rem]">
-            <img
-              src={Illustration}
-              className="max-w-none"
-              alt="Hero Illustration"
-            />
-          </div>
-          <div className="z-30 pb-2 pt-20 md:pb-2 md:pt-16">
-            {/* Hero content */}
-            <div className="mx-auto max-w-3xl text-center">
-              <h1
-                className="h1 bg-gradient-to-r from-[#498294] via-[#35B8DF] to-[#498294] bg-clip-text pb-4 text-transparent"
-                data-aos="fade-down"
-              >
-                Upcoming Events
-              </h1>
-              <AnimatedTitle title="" />
-              <p
-                className="mb-8 text-lg text-slate-300"
-                data-aos="fade-down"
-                data-aos-delay="200"
-              >
-                Our Acts are Diffrent Every Week, Stay Tuned For Any Updates On
-                Our Socials, Check Out Our Atcs Below, Click on the sides
-              </p>
-            </div>
-          </div>
-          <div className="z-50">
-            <SlickSlider EventsList={EventsList} />
-          </div>
-        </div>
+        <PageTop
+          title={'Upcoming Events'}
+          content={
+            `Our Acts are Diffrent Every Week, Stay Tuned For Any Updates On
+                Our Socials, Check Out Our Atcs Below, Click on the sides`
+          }
+        />
+
       </div>
       <div className="mt-24 origin-bottom  bg-[#693d97] bg-opacity-0 p-8 ">
         <div className="origin-bottom ">

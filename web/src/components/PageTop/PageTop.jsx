@@ -4,7 +4,7 @@ import Particles from '../Particles/Particles'
 const PageTop = ({ title, content, children }) => {
   return (
     <div className="sm:max-w-auto relative mx-auto  min-h-[600px] max-w-5xl rounded-b-[3rem]  px-4 sm:px-2">
-      <Particles className="absolute inset-0 z-10 w-screen rounded-b-[3rem]" />
+      {/* <Particles className="absolute inset-0 z-0 w-screen rounded-b-[3rem] h-[600px]" /> */}
       <div
         className=" absolute inset-0 z-20 -mx-28 overflow-hidden rounded-b-[3rem]"
         aria-hidden="true"

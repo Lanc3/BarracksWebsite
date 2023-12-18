@@ -1,0 +1,40 @@
+.tabbed-component {
+  max-width: 600px; /* Set a maximum width for the component */
+  margin: 0 auto; /* Center the component on the page */
+}
+
+.tab-list {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.tab {
+  cursor: pointer;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.tab:hover {
+  background-color: #f0f0f0;
+}
+
+.tab.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.tab-content {
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Slide-in animation when switching tabs */
+.tab-content > p {
+  transform: translateX(0); /* Initial position */
+}
+
+.tab-content > p:not(:first-child) {
+  transform: translateX(-100%); /* Move content to the left */
+}

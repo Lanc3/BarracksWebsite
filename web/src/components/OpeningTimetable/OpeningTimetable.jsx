@@ -1,3 +1,5 @@
+import {Link,routes} from '@redwoodjs/router'
+
 const OpeningTimetable = () => {
   const openingTimes = [
     { day: 'Monday', time: '4 p.m – 2 a.m.' },
@@ -10,10 +12,18 @@ const OpeningTimetable = () => {
   ];
 
   return (
-    <div className="p-4 rounded-md flex w-full justify-center">
+    <div className="p-4 rounded-md flex w-full justify-center mt-24" data-aos="fade-down">
       <div className='flex flex-col'>
-      <h2 className="h2 bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 via-slate-200 to-slate-200/60 pb-6">Opening Times</h2>
-      <ul className='content-center mx-auto'>
+      <Link
+                  className={
+                    ''
+                  }
+                  to={routes.openingTimes()}
+                >
+                 <h2 className="h2 bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 via-slate-200 to-slate-200/60 pb-6">Opening Times</h2>
+
+                </Link>
+       <ul className='content-center mx-auto'>
         {openingTimes.map((item) => (
           <li key={item.day} className="mb-2">
             <span className="text-base font-medium bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-purple-200 pb-0.5">{item.day}:</span>{' '}

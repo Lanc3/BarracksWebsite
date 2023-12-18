@@ -35,7 +35,31 @@ const MobileNavigation = () => {
         />
       </div>
       <Drawer isOpen={isOpen} position={"left"}>
-      <ul className="mt-2 grid gap-2">
+        <ul className="mt-2 grid gap-2">
+        <motion.li
+                initial={{ scale: 0, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{
+                  type: 'spring',
+                  stiffness: 260,
+                  damping: 20,
+                  delay: 0.1 + 1 / 10,
+                }}
+                key={'Home'}
+                className="z-200 "
+              >
+                <Link
+                  onClick={() => setOpen((prev) => !prev)}
+                  className={
+                    'btn-sm group relative w-full py-0.5 text-slate-300 shadow transition duration-150 ease-in-out [background:linear-gradient(theme(colors.purple.500),_theme(colors.purple.500))_padding-box,_linear-gradient(theme(colors.purple.500),_theme(colors.purple.200)_75%,_theme(colors.transparent)_100%)_border-box] before:pointer-events-none before:absolute before:inset-0 before:rounded-full before:bg-slate-800/50 hover:text-white'
+                  }
+                  to={routes.home()}
+                >
+                  <span className="flex gap-1 text-lg text-white hover:relative">
+                    Home
+                  </span>
+                </Link>
+              </motion.li>
               <motion.li
                 initial={{ scale: 0, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
@@ -45,7 +69,7 @@ const MobileNavigation = () => {
                   damping: 20,
                   delay: 0.1 + 1 / 10,
                 }}
-                key={'about'}
+                key={'events'}
                 className="z-200 "
               >
                 <Link
@@ -69,7 +93,7 @@ const MobileNavigation = () => {
                   damping: 20,
                   delay: 0.1 + 2 / 10,
                 }}
-                key={'about'}
+                key={'openingTimes'}
                 className="z-200 "
               >
                 <Link
@@ -77,10 +101,10 @@ const MobileNavigation = () => {
                   className={
                     'btn-sm group relative w-full py-0.5 text-slate-300 shadow transition duration-150 ease-in-out [background:linear-gradient(theme(colors.purple.500),_theme(colors.purple.500))_padding-box,_linear-gradient(theme(colors.purple.500),_theme(colors.purple.200)_75%,_theme(colors.transparent)_100%)_border-box] before:pointer-events-none before:absolute before:inset-0 before:rounded-full before:bg-slate-800/50 hover:text-white'
                   }
-                  to={routes.menu()}
+                  to={routes.openingTimes()}
                 >
                   <span className="flex gap-1 text-lg text-white hover:relative">
-                    Menu
+                    Opening Times
                   </span>
                 </Link>
               </motion.li>
@@ -117,7 +141,7 @@ const MobileNavigation = () => {
                   damping: 20,
                   delay: 0.1 + 4 / 10,
                 }}
-                key={'about'}
+                key={'contact'}
                 className="z-200 "
               >
                 <Link
@@ -141,7 +165,7 @@ const MobileNavigation = () => {
                   damping: 20,
                   delay: 0.1 + 5 / 10,
                 }}
-                key={'about'}
+                key={'roadmap'}
                 className="z-200 "
               >
                 <Link

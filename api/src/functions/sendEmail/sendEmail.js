@@ -15,9 +15,9 @@ export const handler = async (event) => {
 
   // Email content
   const mailOptions = {
-    from: 'your-email@gmail.com',
-    to: 'recipient-email@example.com',
-    subject: 'New Contact Form Submission',
+    from: 'aaron.keating.lanc3@gmail.com',
+    to: 'info@thebarracks.ie',
+    subject: 'New Booking',
     text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
   };
 
