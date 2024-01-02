@@ -6,7 +6,7 @@
 # https://redwoodjs.com/docs/app-configuration-redwood-toml
 
 [web]
-  title = "Redwood App"
+  title = "The Barracks"
   port = 8913
   apiUrl = "/.redwood/functions" # You can customize graphql and dbauth urls individually too: see https://redwoodjs.com/docs/app-configuration-redwood-toml#api-paths
   includeEnvironmentVariables = [
