@@ -5,7 +5,7 @@ import FullCalendar from '@fullcalendar/react'
 import './main.css'
 const EventCalendar = ({ EventsList }) => {
   return (
-    <div className="m-6 " id="backdrop">
+    <div className="" id="backdrop">
       <FullCalendar
         className=""
         id={'backdrop'}

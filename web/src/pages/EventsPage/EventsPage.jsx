@@ -1,29 +1,20 @@
-import { Link, routes } from '@redwoodjs/router'
-import { MetaTags } from '@redwoodjs/web'
-
 import AnimatedTitle from 'src/components/AnimatedTitle/AnimatedTitle'
 import EventCalendar from 'src/components/EventCalendar/EventCalendar'
-import EventSlider from 'src/components/EventSlider/EventSlider'
 import PageTop from 'src/components/PageTop/PageTop'
 import Particles from 'src/components/Particles/Particles'
-import SlickSlider from 'src/components/SlickSlider/SlickSlider'
-
 import AfterDarkImage from '../../../public/AfterDarkImage.png'
-import BrendanImage from '../../../public/BrendanImage.png'
-import DaleBulgerImage from '../../../public/DaleImage.png'
 import DarraghImage from '../../../public/DarraghImage.png'
 import GintyImage from '../../../public/GintyImage.png'
-import Illustration from '../../../public/glow-bottom.svg'
 import JhonnyFingerImage from '../../../public/JhonnyFingersImage.png'
-import MiniImage from '../../../public/MiniImage.png'
 import MorImage from '../../../public/MorImage.png'
-import MossyImage from '../../../public/MossyImage.png'
+
+
 const EventsPage = () => {
   const EventsList = [
     {
       image: GintyImage,
-      name: 'Wizard Fruit',
-      date: '2023-11-02',
+      name: 'Darragh',
+      date: '2024-01-04',
       details: 'All patreons must be over the age of 18',
       day: 'Thursday',
       location: 'Main Stage',
@@ -33,8 +24,8 @@ const EventsPage = () => {
     },
     {
       image: GintyImage,
-      name: 'Ginty',
-      date: '2023-11-04',
+      name: 'Mini',
+      date: '2024-01-05',
       details: 'details',
       day: 'Saturday',
       location: 'Courtyard',
@@ -44,8 +35,8 @@ const EventsPage = () => {
     },
     {
       image: MorImage,
-      name: 'Mor',
-      date: '2023-11-04',
+      name: 'Ginty',
+      date: '2024-01-06',
       details: 'details',
       day: 'Saturday',
       location: 'Main Stage',
@@ -55,8 +46,8 @@ const EventsPage = () => {
     },
     {
       image: AfterDarkImage,
-      name: 'After Dark',
-      date: '2023-11-05',
+      name: 'Mor',
+      date: '2024-01-06',
       details: 'details',
       day: 'Sunday',
       location: 'Main Stage',
@@ -66,8 +57,8 @@ const EventsPage = () => {
     },
     {
       image: DarraghImage,
-      name: '17 Entertainment',
-      date: '2023-11-08',
+      name: 'Dooleys',
+      date: '2024-01-11',
       details: 'details',
       day: 'Wednesday',
       location: 'Main Stage',
@@ -77,8 +68,129 @@ const EventsPage = () => {
     },
     {
       image: JhonnyFingerImage,
-      name: 'name',
-      date: '2023-11-09',
+      name: 'Ginty',
+      date: '2024-01-13',
+      details: 'details',
+      day: 'day',
+      location: 'location',
+      id: 6,
+      key: 6,
+      content: <img src={JhonnyFingerImage} alt="6" />,
+    },
+    {
+      image: JhonnyFingerImage,
+      name: 'Mor',
+      date: '2024-01-13',
+      details: 'details',
+      day: 'day',
+      location: 'location',
+      id: 6,
+      key: 6,
+      content: <img src={JhonnyFingerImage} alt="6" />,
+    },
+    {
+      image: JhonnyFingerImage,
+      name: 'Adam',
+      date: '2024-01-17',
+      details: 'details',
+      day: 'day',
+      location: 'location',
+      id: 6,
+      key: 6,
+      content: <img src={JhonnyFingerImage} alt="6" />,
+    },
+    {
+      image: JhonnyFingerImage,
+      name: 'Dale',
+      date: '2024-01-18',
+      details: 'details',
+      day: 'day',
+      location: 'location',
+      id: 6,
+      key: 6,
+      content: <img src={JhonnyFingerImage} alt="6" />,
+    },
+    {
+      image: JhonnyFingerImage,
+      name: 'Ginty',
+      date: '2024-01-20',
+      details: 'details',
+      day: 'day',
+      location: 'location',
+      id: 6,
+      key: 6,
+      content: <img src={JhonnyFingerImage} alt="6" />,
+    },
+    {
+      image: JhonnyFingerImage,
+      name: 'Mor',
+      date: '2024-01-20',
+      details: 'details',
+      day: 'day',
+      location: 'location',
+      id: 6,
+      key: 6,
+      content: <img src={JhonnyFingerImage} alt="6" />,
+    },
+    {
+      image: JhonnyFingerImage,
+      name: 'Dale',
+      date: '2024-01-25',
+      details: 'details',
+      day: 'day',
+      location: 'location',
+      id: 6,
+      key: 6,
+      content: <img src={JhonnyFingerImage} alt="6" />,
+    },
+    {
+      image: JhonnyFingerImage,
+      name: 'Ginty',
+      date: '2024-01-27',
+      details: 'details',
+      day: 'day',
+      location: 'location',
+      id: 6,
+      key: 6,
+      content: <img src={JhonnyFingerImage} alt="6" />,
+    },
+    {
+      image: JhonnyFingerImage,
+      name: 'Mor',
+      date: '2024-01-27',
+      details: 'details',
+      day: 'day',
+      location: 'location',
+      id: 6,
+      key: 6,
+      content: <img src={JhonnyFingerImage} alt="6" />,
+    },
+    {
+      image: JhonnyFingerImage,
+      name: 'Dooleys',
+      date: '2024-02-01',
+      details: 'details',
+      day: 'day',
+      location: 'location',
+      id: 6,
+      key: 6,
+      content: <img src={JhonnyFingerImage} alt="6" />,
+    },
+    {
+      image: JhonnyFingerImage,
+      name: 'Dooleys',
+      date: '2024-02-15',
+      details: 'details',
+      day: 'day',
+      location: 'location',
+      id: 6,
+      key: 6,
+      content: <img src={JhonnyFingerImage} alt="6" />,
+    },
+    {
+      image: JhonnyFingerImage,
+      name: 'Dooleys',
+      date: '2024-02-22',
       details: 'details',
       day: 'day',
       location: 'location',
