@@ -12,7 +12,7 @@ const AboutusPage = () => {
         <div className="text-wrap sm:px-20 text-ellipsis px-20 md:px-0 lg:px-0">
       <p className="text-white mb-6 origin-bottom text-ellipsis">
               Welcome to The Barracks, your friendly neighborhood pub. We are
-              dedicated to providing you with the best dining and drinking
+              dedicated to providing you with the best Dancing and drinking
               experience in town.
             </p>
             <p className="text-white mb-6 origin-bottom text-ellipsis">
