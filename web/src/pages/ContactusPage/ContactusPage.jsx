@@ -6,7 +6,7 @@ import PageTop from 'src/components/PageTop/PageTop'
 import ContactForm from 'src/components/ContactForm/ContactForm'
 const ContactusPage = () => {
   return (
-    <div className="-mt-20 h-screen">
+    <div className=" h-screen">
       <PageTop
         title={'Contact Us'}
         content={

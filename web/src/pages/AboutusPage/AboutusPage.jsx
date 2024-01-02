@@ -7,28 +7,30 @@ import PageTop from 'src/components/PageTop/PageTop'
 import TeamSection from 'src/components/TeamSection/TeamSection'
 const AboutusPage = () => {
   return (
-    <div className="-mt-20">
+    <div className="mt-0">
       <PageTop title={'About Us'} content={''} >
-      <p className="text-white mb-6 origin-bottom ">
+        <div className="text-wrap sm:px-20 text-ellipsis px-20 md:px-0 lg:px-0">
+      <p className="text-white mb-6 origin-bottom text-ellipsis">
               Welcome to The Barracks, your friendly neighborhood pub. We are
               dedicated to providing you with the best dining and drinking
               experience in town.
             </p>
-            <p className="text-white mb-6 origin-bottom ">
+            <p className="text-white mb-6 origin-bottom text-ellipsis">
               Our team of talented chefs and bartenders work tirelessly to
               deliver delicious food and drinks that will leave you craving for
               more. From classic pub fare to handcrafted cocktails, we have
               something for everyone.
             </p>
-            <p className="text-white mb-6 origin-bottom ">
+            <p className="text-white mb-6 origin-bottom text-wrap">
               The Barracks has been a community gathering place for over a
               century. We take pride in our rich history and are committed to
               creating new memories with each and every guest.
             </p>
-            <p className="text-white mb-6 origin-bottom ">
+            <p className="text-white mb-6 origin-bottom text-wrap">
               Join us today, and let us be a part of your story. We look forward
               to serving you!
             </p>
+            </div>
       </PageTop>
       <TeamSection />
       <div className=" -mx-4">

@@ -18,7 +18,7 @@ const TeamSection = () => {
   return (
     <section className=" mt-24 origin-bottom  ">
 
-      <div className="origin-bottom  px-4 py-8 pl-24 text-center lg:px-6 lg:py-16">
+      <div className="origin-bottom  px-4 py-8  text-center lg:px-6 lg:py-16">
         <div className="mx-auto mb-8 max-w-screen-sm lg:mb-16">
           <AnimatedTitle title={'Our Team'} />
           <p className="font-light text-gray-500 dark:text-gray-400 sm:text-xl">

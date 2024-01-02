@@ -44,13 +44,13 @@ const TabbedComponent = ({openingTimes}) => {
   };
 
   return (
-    <div className="tabbed-component">
+    <div className="tabbed-component px-8">
        <div className="flex space-x-4 justify-center">
          {openingTimes.map((item, index) => (
            <motion.div
              key={item.time + item.day}
              className={`cursor-pointer p-4 rounded-md ${
-              activeTab === index ? 'bg-blue-500 text-white' : 'bg-gray-300'
+              activeTab === index ? 'bg-blue-500 text-base font-medium bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-purple-200 pb-0.5' : 'bg-gray-300'
              }`}
              onClick={() => handleTabClick(index)}
              whileHover={{ scale: 1.05 }}
