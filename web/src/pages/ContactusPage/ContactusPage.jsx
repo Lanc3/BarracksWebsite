@@ -23,7 +23,7 @@ const ContactusPage = () => {
                 </a>
               </p>
               <p className="text-white">
-                Phone: <span className="text-[#35B8DF]">0599141781</span>
+                Phone: <span className="text-[#35B8DF]">059 - 914 - 1781</span>
               </p>
             </div>
             <div className="mt-8 text-center">

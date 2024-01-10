@@ -17,7 +17,7 @@ const AboutusPage = () => {
             </p>
             <p className="text-white mb-6 origin-bottom text-ellipsis">
               Our team of talented chefs and bartenders work tirelessly to
-              deliver delicious food and drinks that will leave you craving for
+              deliver delicious drinks that will leave you craving for
               more. From classic pub fare to handcrafted cocktails, we have
               something for everyone.
             </p>
