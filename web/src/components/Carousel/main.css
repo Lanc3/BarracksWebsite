@@ -16,7 +16,7 @@
 @media only screen and (max-width: 767px) {
   .carousel-images {
     max-width: 350px;
-    height: 350px;
+    height: 250px;
     position: relative;
   border-radius: 10px;
   margin: auto;
@@ -59,11 +59,27 @@
   justify-content: center;
   gap: 20px;
 }
+@media only screen and (max-width: 767px) {
+  .carousel-indicator {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+}
 .dot {
   background-color: #73B935;
   width: 15px;
   height: 15px;
   border-radius: 50%;
+}
+@media only screen and (max-width: 767px) {
+  .dot {
+    background-color: #73B935;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
 }
 .active {
   background-color: #7340AD;
