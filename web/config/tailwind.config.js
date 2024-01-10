@@ -9,6 +9,7 @@ module.exports = {
       backgroundImage: {
         'act-pattern': "url('../public/BackgroundActs.png')",
         'cloud-pattern': "url('../public/Mediamodifier-Design.svg')",
+        'front': "url('../public/barracks-carlow_0688.jpg')",
       },
       fontFamily: {
         custom: ['CustomFont', 'sans'],

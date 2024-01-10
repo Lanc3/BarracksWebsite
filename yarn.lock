@@ -18534,6 +18534,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-gallery-carousel@npm:^0.4.0":
+  version: 0.4.0
+  resolution: "react-gallery-carousel@npm:0.4.0"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+  checksum: 1e639fa1172bd9b613535c302e51440e1fc87c69247ea5aae14f8efe0eca940f3fc9b0379fc7bc33bbfa604cfd330598557b806c189be5dcd93b8bbc981ab8cc
+  languageName: node
+  linkType: hard
+
 "react-helmet-async@npm:1.3.0":
   version: 1.3.0
   resolution: "react-helmet-async@npm:1.3.0"
@@ -19389,6 +19398,7 @@ __metadata:
     prettier-plugin-tailwindcss: 0.4.1
     react-animated-slider: ^2.0.0
     react-curved-text: ^3.0.0
+    react-gallery-carousel: ^0.4.0
     react-icons: ^4.12.0
     react-intersection-observer: ^9.5.2
     react-slick: ^0.29.0
