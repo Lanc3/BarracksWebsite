@@ -54,7 +54,7 @@ export default function ContactSection() {
                   </div>
                 </div>
                 <h3 className="h3 bg-gradient-to-r from-slate-200/60 via-slate-200 to-slate-200/60 bg-clip-text pb-3 text-transparent">
-                  Simplify your Booking, Call Us or Email
+                  Simplify your Booking,<br/> Call or Email Us
                 </h3>
                 <p className="mb-8 text-lg text-slate-400">
                   We provide diffrent levels of services for your bookings,

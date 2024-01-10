@@ -39,7 +39,7 @@ const LandingSection = () => {
           className="h1 break-words bg-gradient-to-r from-purple-500 to-purple-200 bg-clip-text px-24 pb-4 text-transparent sm:px-24"
           data-aos="fade-down"
         >
-          Welcome To The Barracks
+          Welcome To <br/>The Barracks
         </h1>
         <p
           className="mb-8 break-words px-32 text-lg text-slate-300 sm:px-32"

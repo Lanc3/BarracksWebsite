@@ -38,29 +38,29 @@ const DesktopNavigation = () => {
               </Link>
             </div>
             <div className="col-span-1 mr-6 grid h-32 max-h-16 grid-cols-5 gap-4">
-              <div className="col-span-1 inline-flex items-center bg-gradient-to-r from-purple-500 to-purple-200 bg-clip-text p-4 pb-3 font-medium text-transparent transition duration-300 ease-in-out hover:scale-110 hover:text-[#35B8DF]">
+              <div className="col-span-1 inline-flex items-center bg-gradient-to-r from-green-500 to-green-200 bg-clip-text  pb-3 font-medium text-transparent transition duration-300 ease-in-out hover:scale-110 hover:text-[#35B8DF]">
                 <Link to={routes.events()}>
-                  <p className="whitespace-nowrap">Events</p>
+                  <p className="whitespace-nowrap font-extrabold">Events</p>
                 </Link>
               </div>
-              <div className="col-span-1 inline-flex items-center bg-gradient-to-r from-purple-500 to-purple-200 bg-clip-text p-4 pb-3 font-medium text-transparent transition duration-300 ease-in-out hover:scale-110 hover:text-[#35B8DF]">
+              <div className="col-span-1 inline-flex items-center bg-gradient-to-r from-green-500 to-green-200 bg-clip-text pb-3 font-medium text-transparent transition duration-300 ease-in-out hover:scale-110 hover:text-[#35B8DF]">
                 <Link to={routes.openingTimes()}>
-                  <p className="whitespace-nowrap">Opening Times</p>
+                  <p className="whitespace-nowrap font-extrabold">Open Times</p>
                 </Link>
               </div>
-              <div className="col-span-1 inline-flex items-center bg-gradient-to-r from-purple-500 to-purple-200 bg-clip-text p-4 pb-3 font-medium text-transparent transition duration-300 ease-in-out hover:scale-110 hover:text-[#35B8DF]">
+              <div className="col-span-1 inline-flex items-center bg-gradient-to-r from-green-500 to-green-200 bg-clip-text  pb-3 font-medium text-transparent transition duration-300 ease-in-out hover:scale-110 hover:text-[#35B8DF]">
                 <Link to={routes.aboutus()}>
-                  <p className="whitespace-nowrap">About Us</p>
+                  <p className="whitespace-nowrap font-extrabold">About Us</p>
                 </Link>
               </div>
-              <div className="col-span-1 inline-flex items-center bg-gradient-to-r from-purple-500 to-purple-200 bg-clip-text p-4 pb-3 font-medium text-transparent transition duration-300 ease-in-out hover:scale-110 hover:text-[#35B8DF]">
+              <div className="col-span-1 inline-flex items-center bg-gradient-to-r from-green-500 to-green-200 bg-clip-text  pb-3 font-medium text-transparent transition duration-300 ease-in-out hover:scale-110 hover:text-[#35B8DF]">
                 <Link to={routes.contactus()}>
-                  <p className="whitespace-nowrap">Contact Us</p>
+                  <p className="whitespace-nowrap font-extrabold">Contact Us</p>
                 </Link>
               </div>
-              <div className="col-span-1 inline-flex items-center bg-gradient-to-r from-purple-500 to-purple-200 bg-clip-text p-4 pb-3 font-medium text-transparent transition duration-300 ease-in-out hover:scale-110 hover:text-[#35B8DF]">
+              <div className="col-span-1 inline-flex items-center bg-gradient-to-r from-green-500 to-green-200 bg-clip-text pb-3 font-medium text-transparent transition duration-300 ease-in-out hover:scale-110 hover:text-[#35B8DF]">
                 <Link to={routes.roadmap()}>
-                  <p className="whitespace-nowrap">Roadmap</p>
+                  <p className="whitespace-nowrap font-extrabold">Roadmap</p>
                 </Link>
               </div>
             </div>
