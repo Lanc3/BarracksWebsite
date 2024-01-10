@@ -31,6 +31,14 @@ const HomePage = () => {
       <Clients />
       <ContactSection />
       <div>
+      <div className="flex w-full justify-center">
+          <h1
+            className="h2 mt-6 bg-gradient-to-r from-slate-200/60 via-slate-200 to-slate-200/60 bg-clip-text pb-4 text-transparent"
+            data-aos="fade-down"
+          >
+            Atmospheric Nights Out
+          </h1>
+        </div>
       <Carousel images={images}  />
     </div>
 
