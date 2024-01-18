@@ -27,6 +27,9 @@
 .h4 {
     @apply text-2xl font-extrabold;
 }
+.h5 {
+  @apply text-lg font-extrabold;
+}
 
 @screen md {
     .h1 {

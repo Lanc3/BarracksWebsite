@@ -16,7 +16,7 @@ const DesktopNavigation = () => {
 
   return (
     <motion.header
-      className=" gap-5 text-sm lg:flex lg:items-center hidden lg:visable md:hidden"
+      className=" lg:visable hidden gap-5 text-sm md:hidden lg:flex lg:items-center"
       initial={{ opacity: 1 }}
       animate={controls}
     >
@@ -31,34 +31,36 @@ const DesktopNavigation = () => {
 
         {/* Add your header content here */}
         <div className="font-general-medium right-0 m-0 mt-5 items-center justify-center p-5 sm:ml-4 sm:mt-3 sm:flex sm:p-0 ">
-          <div className="grid max-h-16 grid-cols-2 gap-4 ">
+          <div className="grid max-h-16 grid-cols-2 ">
             <div className="float-left w-2/3">
               <Link to={routes.home()}>
                 <AnimatedLogo />
               </Link>
             </div>
             <div className="col-span-1 mr-6 grid h-32 max-h-16 grid-cols-5 gap-4">
-              <div className="col-span-1 inline-flex items-center bg-gradient-to-r from-green-500 to-green-200 bg-clip-text  pb-3 font-medium text-transparent transition duration-300 ease-in-out hover:scale-110 hover:text-[#35B8DF]">
+              <div className="h5 justify-left col-span-1 inline-flex bg-gradient-to-r from-green-500 to-green-200  bg-clip-text pb-3 text-transparent transition duration-300 ease-in-out hover:scale-110 hover:text-[#35B8DF]">
                 <Link to={routes.events()}>
-                  <p className="whitespace-nowrap font-extrabold">Events</p>
+                  <p className="ml-6 whitespace-nowrap pl-2 font-extrabold">
+                    Events
+                  </p>
                 </Link>
               </div>
-              <div className="col-span-1 inline-flex items-center bg-gradient-to-r from-green-500 to-green-200 bg-clip-text pb-3 font-medium text-transparent transition duration-300 ease-in-out hover:scale-110 hover:text-[#35B8DF]">
+              <div className="h5 justify-left col-span-1 inline-flex  bg-gradient-to-r from-green-500 to-green-200 bg-clip-text pb-3 text-transparent transition duration-300 ease-in-out hover:scale-110 hover:text-[#35B8DF]">
                 <Link to={routes.openingTimes()}>
                   <p className="whitespace-nowrap font-extrabold">Open Times</p>
                 </Link>
               </div>
-              <div className="col-span-1 inline-flex items-center bg-gradient-to-r from-green-500 to-green-200 bg-clip-text  pb-3 font-medium text-transparent transition duration-300 ease-in-out hover:scale-110 hover:text-[#35B8DF]">
+              <div className="h5 justify-left col-span-1 inline-flex  bg-gradient-to-r from-green-500 to-green-200  bg-clip-text pb-3 text-transparent transition duration-300 ease-in-out hover:scale-110 hover:text-[#35B8DF]">
                 <Link to={routes.aboutus()}>
                   <p className="whitespace-nowrap font-extrabold">About Us</p>
                 </Link>
               </div>
-              <div className="col-span-1 inline-flex items-center bg-gradient-to-r from-green-500 to-green-200 bg-clip-text  pb-3 font-medium text-transparent transition duration-300 ease-in-out hover:scale-110 hover:text-[#35B8DF]">
+              <div className="h5 justify-left col-span-1 inline-flex  bg-gradient-to-r from-green-500 to-green-200  bg-clip-text pb-3 text-transparent transition duration-300 ease-in-out hover:scale-110 hover:text-[#35B8DF]">
                 <Link to={routes.contactus()}>
                   <p className="whitespace-nowrap font-extrabold">Contact Us</p>
                 </Link>
               </div>
-              <div className="col-span-1 inline-flex items-center bg-gradient-to-r from-green-500 to-green-200 bg-clip-text pb-3 font-medium text-transparent transition duration-300 ease-in-out hover:scale-110 hover:text-[#35B8DF]">
+              <div className="h5 justify-left col-span-1 inline-flex  bg-gradient-to-r from-green-500 to-green-200 bg-clip-text pb-3 text-transparent transition duration-300 ease-in-out hover:scale-110 hover:text-[#35B8DF]">
                 <Link to={routes.roadmap()}>
                   <p className="whitespace-nowrap font-extrabold">Roadmap</p>
                 </Link>
