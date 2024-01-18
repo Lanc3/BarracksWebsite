@@ -47,7 +47,7 @@ const TeamSection = () => {
               src={joanne}
               alt="Bonnie Avatar"
             />
-            <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 text-white">
               <p>Joanne Feeney</p>
             </h3>
             <p className="text-base font-medium bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-purple-200 pb-0.5">General Manager</p>
@@ -59,7 +59,7 @@ const TeamSection = () => {
               src={notfopund}
               alt="Helene Avatar"
             />
-            <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 text-white">
               <p>Aaron Keating</p>
             </h3>
             <p className="text-base font-medium bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-purple-200 pb-0.5">Duity Manager</p>
@@ -71,7 +71,7 @@ const TeamSection = () => {
               src={jack}
               alt="Jese Avatar"
             />
-            <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 text-white">
               <p>Jack Dempsey</p>
             </h3>
             <p className="text-base font-medium bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-purple-200 pb-0.5">Socail Media Manager</p>
@@ -83,7 +83,7 @@ const TeamSection = () => {
               src={nicola}
               alt="Joseph Avatar"
             />
-            <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 text-white">
               <p>Nicola Byrne</p>
             </h3>
             <p className="text-base font-medium bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-purple-200 pb-0.5">Bar Supervisor</p>
@@ -95,7 +95,7 @@ const TeamSection = () => {
               src={tristan}
               alt="Sofia Avatar"
             />
-            <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 text-white">
               <p>Tristan McGrath</p>
             </h3>
             <p className="text-base font-medium bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-purple-200 pb-0.5">Bar Supervisor</p>
@@ -107,7 +107,7 @@ const TeamSection = () => {
               src={dan}
               alt="Leslie Avatar"
             />
-            <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 text-white">
               <p>Daniel Hegarty</p>
             </h3>
             <p className="text-base font-medium bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-purple-200 pb-0.5">Charge Hand</p>
@@ -119,7 +119,7 @@ const TeamSection = () => {
               src={sapphire}
               alt="Michael Avatar"
             />
-            <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 text-white">
               <p>Sapphire Lawlor</p>
             </h3>
             <p className="text-base font-medium bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-purple-200 pb-0.5">Bartender</p>
@@ -131,7 +131,7 @@ const TeamSection = () => {
               src={keelan}
               alt="Neil Avatar"
             />
-            <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 text-white">
               <p>Keelan Finn</p>
             </h3>
             <p className="text-base font-medium bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-purple-200 pb-0.5">Bartender</p>
@@ -143,7 +143,7 @@ const TeamSection = () => {
               src={cian}
               alt="Neil Avatar"
             />
-            <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 text-white">
               <p>Cian O Brien</p>
             </h3>
             <p className="text-base font-medium bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-purple-200 pb-0.5">Bartender</p>
@@ -155,7 +155,7 @@ const TeamSection = () => {
               src={danny}
               alt="Neil Avatar"
             />
-            <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 text-white">
               <p>Daniel Carroll</p>
             </h3>
             <p className="text-base font-medium bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-purple-200 pb-0.5">Bartender</p>
@@ -167,7 +167,7 @@ const TeamSection = () => {
               src={notfopund}
               alt="Neil Avatar"
             />
-            <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 text-white">
               <p>Dominik Domagala</p>
             </h3>
             <p className="text-base font-medium bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-purple-200 pb-0.5">Bartender</p>
@@ -179,7 +179,7 @@ const TeamSection = () => {
               src={eliza}
               alt="Neil Avatar"
             />
-            <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 text-white">
               <p>Eliza Zimmermann</p>
             </h3>
             <p className="text-base font-medium bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-purple-200 pb-0.5">Floor Staff</p>
@@ -191,7 +191,7 @@ const TeamSection = () => {
               src={filip}
               alt="Neil Avatar"
             />
-            <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 text-white">
               <p>Filip Rusiechi</p>
             </h3>
             <p className="text-base font-medium bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-purple-200 pb-0.5">Floor Head</p>
@@ -203,7 +203,7 @@ const TeamSection = () => {
               src={kotrina}
               alt="Neil Avatar"
             />
-            <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 text-white">
               <p>Kotrina cloladis</p>
             </h3>
             <p className="text-base font-medium bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-purple-200 pb-0.5">Floor/Bar Staff</p>
@@ -215,7 +215,7 @@ const TeamSection = () => {
               src={lisa}
               alt="Neil Avatar"
             />
-            <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 text-white">
               <p>Lisa Lavaud</p>
             </h3>
             <p className="text-base font-medium bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-purple-200 pb-0.5">Floor Staff</p>
@@ -227,7 +227,7 @@ const TeamSection = () => {
               src={rebecca}
               alt="Neil Avatar"
             />
-            <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 text-white">
               <p>Rebecca Mitchell</p>
             </h3>
             <p className="text-base font-medium bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-purple-200 pb-0.5">Floor Staff</p>
@@ -239,7 +239,7 @@ const TeamSection = () => {
               src={notfopund}
               alt="Neil Avatar"
             />
-            <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 text-white">
               <p>Fiona Vareem</p>
             </h3>
             <p className="text-base font-medium bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-purple-200 pb-0.5">Floor Staff</p>
@@ -251,7 +251,7 @@ const TeamSection = () => {
               src={notfopund}
               alt="Neil Avatar"
             />
-            <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 text-white">
               <p>Ruth Honner</p>
             </h3>
             <p className="text-base font-medium bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-purple-200 pb-0.5">Floor Staff</p>
@@ -263,7 +263,7 @@ const TeamSection = () => {
               src={cody}
               alt="Neil Avatar"
             />
-            <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 text-white">
               <p>Cody Ryan</p>
             </h3>
             <p className="text-base font-medium bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-purple-200 pb-0.5">Bar Back</p>
@@ -275,7 +275,7 @@ const TeamSection = () => {
               src={notfopund}
               alt="Neil Avatar"
             />
-            <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 text-white">
               <p>Pavel Dobias</p>
             </h3>
             <p className="text-base font-medium bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-purple-200 pb-0.5">Bar Back</p>
@@ -287,7 +287,7 @@ const TeamSection = () => {
               src={notfopund}
               alt="Neil Avatar"
             />
-            <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 text-white">
               <p>Aaron Quinn</p>
             </h3>
             <p className="text-base font-medium bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-purple-200 pb-0.5">Bar Back</p>
