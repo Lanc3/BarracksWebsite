@@ -207,7 +207,7 @@ const EventsPage = () => {
           title={'Upcoming Events'}
           content={
             `Our Acts are Diffrent Every Week, Stay Tuned For Any Updates On
-                Our Socials, Check Out Our Atcs Below, Click on the sides`
+                Our Socials, Check Out Our Acts Below, Click on the sides`
           }
         />
 

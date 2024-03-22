@@ -7,6 +7,8 @@ import Particles from '../Particles/Particles'
 import TestimonialImg01 from './Joanne.jpg'
 import TestimonialImg02 from './Nicola.jpg'
 import TestimonialImg03 from './Tristan.jpg'
+import TestimonialImg04 from './Jack.webp'
+import TestimonialImg05 from './aaron.jpg'
 import {Link,routes} from '@redwoodjs/router'
 
 const TeamHero = () => {
@@ -37,7 +39,7 @@ const TeamHero = () => {
       role: 'General Manager'
     },
     {
-      img: TestimonialImg02,
+      img: TestimonialImg05,
       quote: "Shaping bartenders, one shake at a time, because excellence in mixology is not just a skill; it's a crafted journey of passion and precision.",
       name: 'Aaron Keating',
       role: 'Duity Manager'
@@ -55,7 +57,7 @@ const TeamHero = () => {
       role: 'Supervisor'
     },
     {
-      img: TestimonialImg03,
+      img: TestimonialImg04,
       quote: "Turning pixels into stories and clicks into connections, our media man paints the canvas of our brand with a digital palette of creativity.",
       name: 'Jack Dempsey',
       role: 'Floor Supervisor'

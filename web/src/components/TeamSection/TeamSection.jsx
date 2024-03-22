@@ -15,6 +15,7 @@ import sapphire from '../../../public/sapphire.webp'
 import lisa from '../../../public/lisa.webp'
 import tristan from '../../../public/tristan.webp'
 import jack from '../../../public/Jack.webp'
+import aaron from '../../../public/aaron.jpg'
 import notfopund from '../../../public/logo.png'
 const TeamSection = () => {
   return (
@@ -56,8 +57,8 @@ const TeamSection = () => {
           <div className="text-center text-gray-500 dark:text-gray-400">
             <img
               className="mx-auto mb-4 h-36 w-36 rounded-full"
-              src={notfopund}
-              alt="Helene Avatar"
+              src={aaron}
+              alt="Aaron"
             />
             <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 text-white">
               <p>Aaron Keating</p>
