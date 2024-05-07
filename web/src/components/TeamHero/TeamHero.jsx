@@ -36,19 +36,19 @@ const TeamHero = () => {
       img: TestimonialImg01,
       quote: "We aim to grow a comunity around The Barracks",
       name: 'Joanne Feeney',
-      role: 'General Manager'
+      role: 'Duity Manager'
     },
     {
       img: TestimonialImg05,
       quote: "Shaping bartenders, one shake at a time, because excellence in mixology is not just a skill; it's a crafted journey of passion and precision.",
       name: 'Aaron Keating',
-      role: 'Duity Manager'
+      role: 'Assistant Manager'
     },
     {
       img: TestimonialImg02,
       quote: "Mixing spirits with smiles, we craft more than cocktails – we create memories on the rocks",
       name: 'Nicola Byrne',
-      role: 'Head Mixoligist'
+      role: 'Head Mixoligist/Supervisor'
     },
     {
       img: TestimonialImg03,
@@ -60,7 +60,7 @@ const TeamHero = () => {
       img: TestimonialImg04,
       quote: "Turning pixels into stories and clicks into connections, our media man paints the canvas of our brand with a digital palette of creativity.",
       name: 'Jack Dempsey',
-      role: 'Floor Supervisor'
+      role: 'Floor/Media Supervisor'
     }
   ]
 

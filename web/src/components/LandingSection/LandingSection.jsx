@@ -3,6 +3,8 @@ import { Link, routes } from '@redwoodjs/router'
 import buildingImage from '../../../public/barracks-carlow_0688.jpg'
 import Illustration from '../../../public/glow-bottom.svg'
 import Particles from '../Particles/Particles'
+import { FaArrowRight } from "react-icons/fa6";
+import Font, { Text } from 'react-font'
 const LandingSection = () => {
   return (
     <div>
@@ -35,9 +37,10 @@ const LandingSection = () => {
               <h1
                 className="h1 break-words bg-gradient-to-r from-purple-500 to-purple-200 bg-clip-text px-24 pb-4 text-transparent sm:px-24"
                 data-aos="fade-down"
-              >
+              ><Font family='Poetsen One'>
                 Welcome to <br />
                 The Barracks
+                </Font>
               </h1>
               <p
                 className="mb-8 break-words px-32 text-lg text-slate-300 sm:px-32"
@@ -60,7 +63,7 @@ const LandingSection = () => {
                   >
                     Book With Us{' '}
                     <span className="ml-1 tracking-normal text-purple-500 transition-transform duration-150 ease-in-out group-hover:translate-x-0.5">
-                      -&gt;
+                    <FaArrowRight />
                     </span>
                   </Link>
                 </div>
@@ -71,7 +74,7 @@ const LandingSection = () => {
                   >
                     <span>See Our Events</span>
                     <span className="ml-1 tracking-normal text-purple-500 transition-transform duration-150 ease-in-out group-hover:translate-x-0.5">
-                      -&gt;
+                    <FaArrowRight />
                     </span>
                   </Link>
                 </div>

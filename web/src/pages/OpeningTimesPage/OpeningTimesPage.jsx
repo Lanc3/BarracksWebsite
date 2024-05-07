@@ -6,7 +6,7 @@ const OpeningTimesPage = () => {
     { area: 'Gatehouse Bar', timeArray: [
       { day: 'Monday', time: 'CLOSED' },
       { day: 'Tuesday', time: 'CLOSED' },
-      { day: 'Wednesday', time: '8 p.m – 2 a.m.' },
+      { day: 'Wednesday', time: 'CLOSED' },
       { day: 'Thursday', time: 'CLOSED' },
       { day: 'Friday', time: 'CLOSED' },
       { day: 'Saturday', time: '8 p.m – 2 a.m.' },
@@ -16,16 +16,16 @@ const OpeningTimesPage = () => {
     { area: 'Main Bar', timeArray: [
       { day: 'Monday', time: 'CLOSED' },
       { day: 'Tuesday', time: 'CLOSED' },
-      { day: 'Wednesday', time: '4 p.m – 2 a.m.' },
+      { day: 'Wednesday', time: 'CLOSED' },
       { day: 'Thursday', time: '4 p.m – 1:30 a.m.' },
       { day: 'Friday', time: '4 p.m – 2 a.m.' },
       { day: 'Saturday', time: '3 p.m – 2 a.m.' },
       { day: 'Sunday', time: '2 p.m – 2 a.m.' },
     ] },
-    { area: 'Rabbit Hole (pool)', timeArray: [
+    { area: 'Rabbit Hole (pool room)', timeArray: [
       { day: 'Monday', time: 'CLOSED' },
       { day: 'Tuesday', time: 'CLOSED' },
-      { day: 'Wednesday', time: '4 p.m – 10 p.m.' },
+      { day: 'Wednesday', time: 'CLOSED' },
       { day: 'Thursday', time: '4 p.m – 10 p.m.' },
       { day: 'Friday', time: '12 p.m – 10 p.m.' },
       { day: 'Saturday', time: '3 p.m – 10 p.m.' },

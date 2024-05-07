@@ -3,7 +3,7 @@ import AnimatedTitle from '../AnimatedTitle/AnimatedTitle'
 import Particles from '../Particles/Particles'
 const PageTop = ({ title, content, children }) => {
   return (
-    <div className="sm:max-w-auto relative mx-auto  min-h-[700px] max-w-5xl rounded-b-[3rem]  px-4 sm:px-2">
+    <div className="sm:max-w-auto relative mx-auto  min-h-[500px] max-w-5xl rounded-b-[3rem]  px-4 sm:px-2">
       {/* <Particles className="absolute inset-0 z-0 w-screen rounded-b-[3rem] h-[600px]" /> */}
       <div
         className=" absolute inset-0 z-20 -mx-28 overflow-hidden rounded-b-[3rem]"

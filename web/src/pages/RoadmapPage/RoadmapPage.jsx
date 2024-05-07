@@ -161,7 +161,7 @@ const RoadmapPage = () => {
             </time>
           </div>
           <div className="text-white">
-            We will be launching an affiliate program for our requlars as a thank you.
+            We will be launching an affiliate program for our regulars as a thank you.
           </div>
         </div>
       </div>

@@ -17,6 +17,7 @@ import tristan from '../../../public/tristan.webp'
 import jack from '../../../public/Jack.webp'
 import aaron from '../../../public/aaron.jpg'
 import notfopund from '../../../public/logo.png'
+
 const TeamSection = () => {
   return (
     <section className=" mt-24 origin-bottom  ">
@@ -102,18 +103,7 @@ const TeamSection = () => {
             <p className="text-base font-medium bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-purple-200 pb-0.5">Bar Supervisor</p>
 
           </div>
-          <div className="text-center text-gray-500 dark:text-gray-400">
-            <img
-              className="mx-auto mb-4 h-36 w-36 rounded-full object-cover"
-              src={dan}
-              alt="Leslie Avatar"
-            />
-            <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 text-white">
-              <p>Daniel Hegarty</p>
-            </h3>
-            <p className="text-base font-medium bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-purple-200 pb-0.5">Charge Hand</p>
-
-          </div>
+        
           <div className="text-center text-gray-500 dark:text-gray-400">
             <img
               className="mx-auto mb-4 h-36 w-36 rounded-full object-cover"
@@ -126,18 +116,7 @@ const TeamSection = () => {
             <p className="text-base font-medium bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-purple-200 pb-0.5">Bartender</p>
 
           </div>
-          <div className="text-center text-gray-500 dark:text-gray-400">
-            <img
-              className="mx-auto mb-4 h-36 w-36 rounded-full object-cover"
-              src={keelan}
-              alt="Neil Avatar"
-            />
-            <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 text-white">
-              <p>Keelan Finn</p>
-            </h3>
-            <p className="text-base font-medium bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-purple-200 pb-0.5">Bartender</p>
 
-          </div>
           <div className="text-center text-gray-500 dark:text-gray-400">
             <img
               className="mx-auto mb-4 h-36 w-36 rounded-full object-cover"
@@ -162,18 +141,7 @@ const TeamSection = () => {
             <p className="text-base font-medium bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-purple-200 pb-0.5">Bartender</p>
 
           </div>
-          <div className="text-center text-gray-500 dark:text-gray-400">
-            <img
-              className="mx-auto mb-4 h-36 w-36 rounded-full"
-              src={notfopund}
-              alt="Neil Avatar"
-            />
-            <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 text-white">
-              <p>Dominik Domagala</p>
-            </h3>
-            <p className="text-base font-medium bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-purple-200 pb-0.5">Bartender</p>
 
-          </div>
           <div className="text-center text-gray-500 dark:text-gray-400">
             <img
               className="mx-auto mb-4 h-36 w-36 rounded-full object-cover"
@@ -225,42 +193,6 @@ const TeamSection = () => {
           <div className="text-center text-gray-500 dark:text-gray-400">
             <img
               className="mx-auto mb-4 h-36 w-36 rounded-full object-cover"
-              src={rebecca}
-              alt="Neil Avatar"
-            />
-            <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 text-white">
-              <p>Rebecca Mitchell</p>
-            </h3>
-            <p className="text-base font-medium bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-purple-200 pb-0.5">Floor Staff</p>
-
-          </div>
-          <div className="text-center text-gray-500 dark:text-gray-400">
-            <img
-              className="mx-auto mb-4 h-36 w-36 rounded-full"
-              src={notfopund}
-              alt="Neil Avatar"
-            />
-            <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 text-white">
-              <p>Fiona Vareem</p>
-            </h3>
-            <p className="text-base font-medium bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-purple-200 pb-0.5">Floor Staff</p>
-
-          </div>
-          <div className="text-center text-gray-500 dark:text-gray-400">
-            <img
-              className="mx-auto mb-4 h-36 w-36 rounded-full object-cover"
-              src={notfopund}
-              alt="Neil Avatar"
-            />
-            <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 text-white">
-              <p>Ruth Honner</p>
-            </h3>
-            <p className="text-base font-medium bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-purple-200 pb-0.5">Floor Staff</p>
-
-          </div>
-          <div className="text-center text-gray-500 dark:text-gray-400">
-            <img
-              className="mx-auto mb-4 h-36 w-36 rounded-full object-cover"
               src={cody}
               alt="Neil Avatar"
             />
@@ -273,7 +205,7 @@ const TeamSection = () => {
           <div className="text-center text-gray-500 dark:text-gray-400">
             <img
               className="mx-auto mb-4 h-36 w-36 rounded-full"
-              src={notfopund}
+              src={pavel}
               alt="Neil Avatar"
             />
             <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 text-white">

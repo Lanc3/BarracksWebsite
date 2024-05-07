@@ -37,7 +37,14 @@ const DesktopNavigation = () => {
                 <AnimatedLogo />
               </Link>
             </div>
-            <div className="col-span-1 mr-6 grid h-32 max-h-16 grid-cols-5 gap-4">
+            <div className="col-span-1 mr-6 grid h-32 max-h-16 grid-cols-6 gap-4">
+            <div className="h5 justify-left col-span-1 inline-flex bg-gradient-to-r from-green-500 to-green-200  bg-clip-text pb-3 text-transparent transition duration-300 ease-in-out hover:scale-110 hover:text-[#35B8DF]">
+                <Link to={routes.home()}>
+                  <p className="ml-6 whitespace-nowrap pl-2 font-extrabold">
+                    Home
+                  </p>
+                </Link>
+              </div>
               <div className="h5 justify-left col-span-1 inline-flex bg-gradient-to-r from-green-500 to-green-200  bg-clip-text pb-3 text-transparent transition duration-300 ease-in-out hover:scale-110 hover:text-[#35B8DF]">
                 <Link to={routes.events()}>
                   <p className="ml-6 whitespace-nowrap pl-2 font-extrabold">
