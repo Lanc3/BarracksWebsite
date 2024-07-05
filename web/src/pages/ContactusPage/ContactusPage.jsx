@@ -10,7 +10,7 @@ const ContactusPage = () => {
       <PageTop
         title={'Contact Us'}
         content={
-          'If you have any questions or inquiries, please feel free to reach out to us.'
+          'If you have any questions or enquiries, please feel free to reach out to us.'
         }
       >
         <div className="-mr-3 mb-16 mt-16  origin-bottom  p-8 pl-2 ">

@@ -11,12 +11,12 @@ const AboutusPage = () => {
       <PageTop title={'About Us'} content={''} >
         <div className="text-wrap sm:px-20 text-ellipsis px-20 md:px-0 lg:px-0">
       <p className="text-white mb-6 origin-bottom text-ellipsis">
-              Welcome to The Barracks, your friendly neighborhood pub. We are
+              Welcome to The Barracks, We are
               dedicated to providing you with the best Dancing and drinking
               experience in town.
             </p>
             <p className="text-white mb-6 origin-bottom text-ellipsis">
-              Our team of talented chefs and bartenders work tirelessly to
+              Our team of talented bartenders work tirelessly to
               deliver delicious drinks that will leave you craving for
               more. From classic pub fare to handcrafted cocktails, we have
               something for everyone.

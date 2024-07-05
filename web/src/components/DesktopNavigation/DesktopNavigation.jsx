@@ -67,11 +67,11 @@ const DesktopNavigation = () => {
                   <p className="whitespace-nowrap font-extrabold">Contact Us</p>
                 </Link>
               </div>
-              <div className="h5 justify-left col-span-1 inline-flex  bg-gradient-to-r from-green-500 to-green-200 bg-clip-text pb-3 text-transparent transition duration-300 ease-in-out hover:scale-110 hover:text-[#35B8DF]">
+              {/* <div className="h5 justify-left col-span-1 inline-flex  bg-gradient-to-r from-green-500 to-green-200 bg-clip-text pb-3 text-transparent transition duration-300 ease-in-out hover:scale-110 hover:text-[#35B8DF]">
                 <Link to={routes.roadmap()}>
                   <p className="whitespace-nowrap font-extrabold">Roadmap</p>
                 </Link>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

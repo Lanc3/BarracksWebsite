@@ -156,7 +156,7 @@ const MobileNavigation = () => {
                   </span>
                 </Link>
               </motion.li>
-              <motion.li
+              {/* <motion.li
                 initial={{ scale: 0, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{
@@ -179,7 +179,7 @@ const MobileNavigation = () => {
                     Roadmap
                   </span>
                 </Link>
-              </motion.li>
+              </motion.li> */}
             </ul>
     </Drawer>
       {/* <AnimatePresence>

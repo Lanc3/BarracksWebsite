@@ -36,7 +36,7 @@ const TeamHero = () => {
       img: TestimonialImg01,
       quote: "We aim to grow a comunity around The Barracks",
       name: 'Joanne Feeney',
-      role: 'Duity Manager'
+      role: 'Duty Manager'
     },
     {
       img: TestimonialImg05,

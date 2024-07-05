@@ -15,7 +15,7 @@ const EventsPage = () => {
       location: 'Main Stage',
       id: 1,
       key: 1,
-    
+
     },
     {
       name: 'Brendan',
@@ -25,7 +25,7 @@ const EventsPage = () => {
       location: 'Courtyard',
       id: 2,
       key: 2,
-      
+
     },
     {
       name: 'Darragh',
@@ -35,7 +35,7 @@ const EventsPage = () => {
       location: 'Main Stage',
       id: 3,
       key: 3,
-      
+
     },
     {
       name: 'Ginty',
@@ -45,7 +45,7 @@ const EventsPage = () => {
       location: 'Main Stage',
       id: 4,
       key: 4,
-      
+
     },
     {
       name: 'Dooleys',
@@ -55,7 +55,7 @@ const EventsPage = () => {
       location: 'Main Stage',
       id: 5,
       key: 5,
-      
+
     },
     {
       name: 'Wizard Fruit',
@@ -65,7 +65,7 @@ const EventsPage = () => {
       location: 'location',
       id: 6,
       key: 6,
-      
+
     },
     {
       name: 'Jake',
@@ -75,7 +75,7 @@ const EventsPage = () => {
       location: 'location',
       id: 6,
       key: 6,
-     
+
     },
     {
       name: 'Dale',
@@ -85,7 +85,7 @@ const EventsPage = () => {
       location: 'location',
       id: 6,
       key: 6,
-     
+
     },
     {
       name: 'Ginty',
@@ -95,7 +95,7 @@ const EventsPage = () => {
       location: 'location',
       id: 6,
       key: 6,
-     
+
     },
     {
       name: 'After Dark',
@@ -105,7 +105,7 @@ const EventsPage = () => {
       location: 'location',
       id: 6,
       key: 6,
-      
+
     },
     {
       name: 'Dooleys',
@@ -115,7 +115,7 @@ const EventsPage = () => {
       location: 'location',
       id: 6,
       key: 6,
-      
+
     },
     {
       name: 'Brendan',
@@ -125,7 +125,7 @@ const EventsPage = () => {
       location: 'location',
       id: 6,
       key: 6,
-      
+
     },
     {
       name: '17 Entertainment',
@@ -135,7 +135,7 @@ const EventsPage = () => {
       location: 'location',
       id: 6,
       key: 6,
-      
+
     },
     {
       name: 'African Day',
@@ -399,7 +399,7 @@ const EventsPage = () => {
       <div className="mt-24 origin-bottom  bg-[#693d97] bg-opacity-0 p-8 ">
         <div className="origin-bottom ">
           <div className="flex w-full flex-col pr-6">
-            <AnimatedTitle title="Callendar" />
+            <AnimatedTitle title="Calendar " />
           </div>
 
           <EventCalendar EventsList={EventsList} />

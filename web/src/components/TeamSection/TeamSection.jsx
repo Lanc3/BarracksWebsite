@@ -26,7 +26,7 @@ const TeamSection = () => {
         <div className="mx-auto mb-8 max-w-screen-sm lg:mb-16">
           <AnimatedTitle title={'Our Team'} />
           <p className="font-light text-gray-500 dark:text-gray-400 sm:text-xl">
-            Check out our talented team of professional and curtious staff
+            Check out our talented team of professional and courteous staff
             members
           </p>
         </div>
@@ -76,7 +76,7 @@ const TeamSection = () => {
             <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 text-white">
               <p>Jack Dempsey</p>
             </h3>
-            <p className="text-base font-medium bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-purple-200 pb-0.5">Socail Media Manager</p>
+            <p className="text-base font-medium bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-purple-200 pb-0.5">Social Media Manager</p>
 
           </div>
           <div className="text-center text-gray-500 dark:text-gray-400">
@@ -103,7 +103,7 @@ const TeamSection = () => {
             <p className="text-base font-medium bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-purple-200 pb-0.5">Bar Supervisor</p>
 
           </div>
-        
+
           <div className="text-center text-gray-500 dark:text-gray-400">
             <img
               className="mx-auto mb-4 h-36 w-36 rounded-full object-cover"
