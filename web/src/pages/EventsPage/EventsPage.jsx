@@ -9,7 +9,7 @@ const EventsPage = () => {
   const EventsList = [
     {
       name: 'Dooleys',
-      date: '2024-05-09',
+      date: '2024-07-04',
       details: 'All patreons must be over the age of 18',
       day: 'Thursday',
       location: 'Main Stage',
@@ -18,8 +18,8 @@ const EventsPage = () => {
 
     },
     {
-      name: 'Brendan',
-      date: '2024-05-10',
+      name: 'Mini',
+      date: '2024-07-5',
       details: 'details',
       day: 'Saturday',
       location: 'Courtyard',
@@ -28,8 +28,8 @@ const EventsPage = () => {
 
     },
     {
-      name: 'Darragh',
-      date: '2024-05-11',
+      name: 'Mor',
+      date: '2024-07-06',
       details: 'details',
       day: 'Saturday',
       location: 'Main Stage',
@@ -39,7 +39,7 @@ const EventsPage = () => {
     },
     {
       name: 'Ginty',
-      date: '2024-05-11',
+      date: '2024-07-06',
       details: 'details',
       day: 'Sunday',
       location: 'Main Stage',
@@ -48,8 +48,8 @@ const EventsPage = () => {
 
     },
     {
-      name: 'Dooleys',
-      date: '2024-01-11',
+      name: 'After Dark',
+      date: '2024-07-07',
       details: 'details',
       day: 'Wednesday',
       location: 'Main Stage',
@@ -58,8 +58,8 @@ const EventsPage = () => {
 
     },
     {
-      name: 'Wizard Fruit',
-      date: '2024-05-12',
+      name: 'Dooleys',
+      date: '2024-07-11',
       details: 'details',
       day: 'day',
       location: 'location',
@@ -68,8 +68,8 @@ const EventsPage = () => {
 
     },
     {
-      name: 'Jake',
-      date: '2024-05-16',
+      name: 'Brendan',
+      date: '2024-07-12',
       details: 'details',
       day: 'day',
       location: 'location',
@@ -79,7 +79,76 @@ const EventsPage = () => {
     },
     {
       name: 'Dale',
-      date: '2024-05-18',
+      date: '2024-07-18',
+      details: 'details',
+      day: 'day',
+      location: 'location',
+      id: 6,
+      key: 6,
+
+    },
+    {
+      name: 'Brendan',
+      date: '2024-07-19',
+      details: 'details',
+      day: 'day',
+      location: 'location',
+      id: 6,
+      key: 6,
+
+    },
+    {
+      name: 'Darragh',
+      date: '2024-07-20',
+      details: 'details',
+      day: 'day',
+      location: 'location',
+      id: 6,
+      key: 6,
+
+    },
+    {
+      name: 'Mini',
+      date: '2024-07-20',
+      details: 'details',
+      day: 'day',
+      location: 'location',
+      id: 6,
+      key: 6,
+
+    },
+    {
+      name: 'Wizard Fruit',
+      date: '2024-07-21',
+      details: 'details',
+      day: 'day',
+      location: 'location',
+      id: 6,
+      key: 6,
+
+    },
+    {
+      name: 'Dooleys',
+      date: '2024-07-25',
+      details: 'details',
+      day: 'day',
+      location: 'location',
+      id: 6,
+      key: 6,
+
+    },
+    {
+      name: 'Brendan',
+      date: '2024-07-26',
+      details: 'details',
+      day: 'day',
+      location: 'location',
+      id: 6,
+      key: 6,
+    },
+    {
+      name: 'Mor',
+      date: '2024-07-27',
       details: 'details',
       day: 'day',
       location: 'location',
@@ -89,57 +158,7 @@ const EventsPage = () => {
     },
     {
       name: 'Ginty',
-      date: '2024-05-18',
-      details: 'details',
-      day: 'day',
-      location: 'location',
-      id: 6,
-      key: 6,
-
-    },
-    {
-      name: 'After Dark',
-      date: '2024-05-19',
-      details: 'details',
-      day: 'day',
-      location: 'location',
-      id: 6,
-      key: 6,
-
-    },
-    {
-      name: 'Dooleys',
-      date: '2024-05-23',
-      details: 'details',
-      day: 'day',
-      location: 'location',
-      id: 6,
-      key: 6,
-
-    },
-    {
-      name: 'Brendan',
-      date: '2024-05-24',
-      details: 'details',
-      day: 'day',
-      location: 'location',
-      id: 6,
-      key: 6,
-
-    },
-    {
-      name: '17 Entertainment',
-      date: '2024-05-25',
-      details: 'details',
-      day: 'day',
-      location: 'location',
-      id: 6,
-      key: 6,
-
-    },
-    {
-      name: 'African Day',
-      date: '2024-05-25',
+      date: '2024-07-27',
       details: 'details',
       day: 'day',
       location: 'location',
@@ -148,26 +167,7 @@ const EventsPage = () => {
     },
     {
       name: 'After Dark',
-      date: '2024-05-26',
-      details: 'details',
-      day: 'day',
-      location: 'location',
-      id: 6,
-      key: 6,
-
-    },
-    {
-      name: 'Dale',
-      date: '2024-05-30',
-      details: 'details',
-      day: 'day',
-      location: 'location',
-      id: 6,
-      key: 6,
-    },
-    {
-      name: 'Brendan',
-      date: '2024-05-31',
+      date: '2024-07-28',
       details: 'details',
       day: 'day',
       location: 'location',
