@@ -52,7 +52,7 @@ const TeamSection = () => {
             <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 text-white">
               <p>Joanne</p>
             </h3>
-            <p className="text-base font-medium bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-purple-200 pb-0.5">General Manager</p>
+            <p className="text-base font-medium bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-purple-200 pb-0.5">Duty Manager</p>
 
           </div>
           <div className="text-center text-gray-500 dark:text-gray-400">

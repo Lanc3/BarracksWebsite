@@ -9,7 +9,7 @@ const EventsPage = () => {
   const EventsList = [
     {
       name: 'Dooleys',
-      date: '2024-07-04',
+      date: '2024-08-15',
       details: 'All patreons must be over the age of 18',
       day: 'Thursday',
       location: 'Main Stage',
@@ -18,8 +18,8 @@ const EventsPage = () => {
 
     },
     {
-      name: 'Mini',
-      date: '2024-07-5',
+      name: 'Brendan',
+      date: '2024-08-16',
       details: 'details',
       day: 'Saturday',
       location: 'Courtyard',
@@ -29,7 +29,7 @@ const EventsPage = () => {
     },
     {
       name: 'Mor',
-      date: '2024-07-06',
+      date: '2024-08-17',
       details: 'details',
       day: 'Saturday',
       location: 'Main Stage',
@@ -39,7 +39,7 @@ const EventsPage = () => {
     },
     {
       name: 'Ginty',
-      date: '2024-07-06',
+      date: '2024-08-17',
       details: 'details',
       day: 'Sunday',
       location: 'Main Stage',
@@ -49,7 +49,7 @@ const EventsPage = () => {
     },
     {
       name: 'After Dark',
-      date: '2024-07-07',
+      date: '2024-08-18',
       details: 'details',
       day: 'Wednesday',
       location: 'Main Stage',
