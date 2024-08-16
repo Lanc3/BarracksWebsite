@@ -51,12 +51,6 @@ const TeamHero = () => {
       role: 'Head Mixoligist/Supervisor'
     },
     {
-      img: TestimonialImg03,
-      quote: "At our bar, every pour is a pour-fect blend of craftsmanship and camaraderie.",
-      name: 'Tristan McGrath',
-      role: 'Supervisor'
-    },
-    {
       img: TestimonialImg04,
       quote: "Turning pixels into stories and clicks into connections, our media man paints the canvas of our brand with a digital palette of creativity.",
       name: 'Jack Dempsey',
