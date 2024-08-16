@@ -18,7 +18,7 @@ const EventsPage = () => {
 
     },
     {
-      name: 'Brendan',
+      name: 'Mini',
       date: '2024-08-16',
       details: 'details',
       day: 'Saturday',
@@ -28,7 +28,7 @@ const EventsPage = () => {
 
     },
     {
-      name: 'Mor',
+      name: 'Asophonics',
       date: '2024-08-17',
       details: 'details',
       day: 'Saturday',
@@ -48,7 +48,7 @@ const EventsPage = () => {
 
     },
     {
-      name: 'After Dark',
+      name: 'Dale',
       date: '2024-08-18',
       details: 'details',
       day: 'Wednesday',
@@ -59,7 +59,7 @@ const EventsPage = () => {
     },
     {
       name: 'Dooleys',
-      date: '2024-07-11',
+      date: '2024-08-22',
       details: 'details',
       day: 'day',
       location: 'location',
@@ -68,8 +68,8 @@ const EventsPage = () => {
 
     },
     {
-      name: 'Brendan',
-      date: '2024-07-12',
+      name: 'TBC',
+      date: '2024-08-23',
       details: 'details',
       day: 'day',
       location: 'location',
@@ -78,8 +78,8 @@ const EventsPage = () => {
 
     },
     {
-      name: 'Dale',
-      date: '2024-07-18',
+      name: 'Jake',
+      date: '2024-08-24',
       details: 'details',
       day: 'day',
       location: 'location',
@@ -88,8 +88,8 @@ const EventsPage = () => {
 
     },
     {
-      name: 'Brendan',
-      date: '2024-07-19',
+      name: 'Ginty',
+      date: '2024-08-24',
       details: 'details',
       day: 'day',
       location: 'location',
@@ -98,28 +98,8 @@ const EventsPage = () => {
 
     },
     {
-      name: 'Darragh',
-      date: '2024-07-20',
-      details: 'details',
-      day: 'day',
-      location: 'location',
-      id: 6,
-      key: 6,
-
-    },
-    {
-      name: 'Mini',
-      date: '2024-07-20',
-      details: 'details',
-      day: 'day',
-      location: 'location',
-      id: 6,
-      key: 6,
-
-    },
-    {
-      name: 'Wizard Fruit',
-      date: '2024-07-21',
+      name: 'After Dark',
+      date: '2024-08-25',
       details: 'details',
       day: 'day',
       location: 'location',
@@ -129,7 +109,7 @@ const EventsPage = () => {
     },
     {
       name: 'Dooleys',
-      date: '2024-07-25',
+      date: '2024-08-29',
       details: 'details',
       day: 'day',
       location: 'location',
@@ -138,8 +118,28 @@ const EventsPage = () => {
 
     },
     {
-      name: 'Brendan',
-      date: '2024-07-26',
+      name: 'Mini',
+      date: '2024-08-30',
+      details: 'details',
+      day: 'day',
+      location: 'location',
+      id: 6,
+      key: 6,
+
+    },
+    {
+      name: 'Mor',
+      date: '2024-08-31',
+      details: 'details',
+      day: 'day',
+      location: 'location',
+      id: 6,
+      key: 6,
+
+    },
+    {
+      name: 'Ginty',
+      date: '2024-08-31',
       details: 'details',
       day: 'day',
       location: 'location',
