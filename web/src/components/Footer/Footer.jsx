@@ -44,14 +44,7 @@ const Footer = () => {
             Contact
           </Link>
         </div>
-        <div className="px-5 py-2">
-          <Link
-            to={routes.roadmap()}
-            className="col-span-1 inline-flex items-center bg-gradient-to-r from-purple-500 to-purple-200 bg-clip-text p-4 pb-3 font-medium text-transparent transition duration-300 ease-in-out hover:scale-110 hover:text-[#35B8DF]"
-          >
-            Roadmap
-          </Link>
-        </div>
+        
         <div className="px-5 py-2">
           <Link
             to={routes.aboutus()}
