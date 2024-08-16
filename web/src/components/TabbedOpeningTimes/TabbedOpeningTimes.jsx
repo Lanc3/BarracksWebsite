@@ -11,7 +11,7 @@ const TabbedComponent = ({openingTimes}) => {
   const openingTimesMain = [
   { day: 'Monday', time: 'CLOSED' },
   { day: 'Tuesday', time: 'CLOSED' },
-  { day: 'Wednesday', time: 'CLOSED' },
+  { day: 'Wednesday', time: '4 p.m – 11:30 a.m.' },
   { day: 'Thursday', time: '4 p.m – 1:30 a.m.' },
   { day: 'Friday', time: '12 p.m – 2 a.m.' },
   { day: 'Saturday', time: '3 p.m – 2 a.m.' },
@@ -29,7 +29,7 @@ const TabbedComponent = ({openingTimes}) => {
   const openingTimesRabit = [
     { day: 'Monday', time: 'CLOSED' },
     { day: 'Tuesday', time: 'CLOSED' },
-    { day: 'Wednesday', time: 'CLOSED' },
+    { day: 'Wednesday', time: '4 p.m – 11:30 a.m.' },
     { day: 'Thursday', time: '4 p.m – 10 p.m.' },
     { day: 'Friday', time: '12 p.m – 10 p.m.' },
     { day: 'Saturday', time: '3 p.m – 10 p.m.' },

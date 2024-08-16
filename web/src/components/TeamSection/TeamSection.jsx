@@ -64,7 +64,7 @@ const TeamSection = () => {
             <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 text-white">
               <p>Aaron</p>
             </h3>
-            <p className="text-base font-medium bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-purple-200 pb-0.5">Duity Manager</p>
+            <p className="text-base font-medium bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-purple-200 pb-0.5">Assistant Manager</p>
 
           </div>
           <div className="text-center text-gray-500 dark:text-gray-400">
@@ -87,18 +87,6 @@ const TeamSection = () => {
             />
             <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 text-white">
               <p>Nicola</p>
-            </h3>
-            <p className="text-base font-medium bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-purple-200 pb-0.5">Bar Supervisor</p>
-
-          </div>
-          <div className="text-center text-gray-500 dark:text-gray-400">
-            <img
-              className="mx-auto mb-4 h-36 w-36 rounded-full object-cover"
-              src={tristan}
-              alt="Sofia Avatar"
-            />
-            <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 text-white">
-              <p>Tristan</p>
             </h3>
             <p className="text-base font-medium bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-purple-200 pb-0.5">Bar Supervisor</p>
 
