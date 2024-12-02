@@ -8,8 +8,8 @@ import Particles from 'src/components/Particles/Particles'
 const EventsPage = () => {
   const EventsList = [
     {
-      name: 'Brendan',
-      date: '2024-11-01',
+      name: 'After Dark',
+      date: '2024-12-01',
       details: 'All patreons must be over the age of 18',
       day: 'Thursday',
       location: 'Main Stage',
@@ -18,8 +18,8 @@ const EventsPage = () => {
 
     },
     {
-      name: 'Ginty',
-      date: '2024-11-02',
+      name: 'Mor',
+      date: '2024-12-04',
       details: 'details',
       day: 'Saturday',
       location: 'Courtyard',
@@ -28,8 +28,8 @@ const EventsPage = () => {
 
     },
     {
-      name: 'Asophonics',
-      date: '2024-11-02',
+      name: 'Speed Quiz',
+      date: '2024-12-04',
       details: 'details',
       day: 'Saturday',
       location: 'Main Stage',
@@ -38,8 +38,8 @@ const EventsPage = () => {
 
     },
     {
-      name: 'After Dark',
-      date: '2024-11-03',
+      name: 'Urban Shutdown',
+      date: '2024-12-04',
       details: 'details',
       day: 'Sunday',
       location: 'Main Stage',
@@ -48,8 +48,8 @@ const EventsPage = () => {
 
     },
     {
-      name: 'Speed Quiz',
-      date: '2024-11-06',
+      name: 'Student Xmas Day',
+      date: '2024-12-04',
       details: 'details',
       day: 'Wednesday',
       location: 'Main Stage',
@@ -59,67 +59,7 @@ const EventsPage = () => {
     },
     {
       name: 'Dooleys',
-      date: '2024-11-07',
-      details: 'details',
-      day: 'day',
-      location: 'location',
-      id: 6,
-      key: 6,
-
-    },
-    {
-      name: 'Brendan',
-      date: '2024-11-08',
-      details: 'details',
-      day: 'day',
-      location: 'location',
-      id: 6,
-      key: 6,
-
-    },
-    {
-      name: 'Ginty',
-      date: '2024-11-09',
-      details: 'details',
-      day: 'day',
-      location: 'location',
-      id: 6,
-      key: 6,
-
-    },
-    {
-      name: 'Mor',
-      date: '2024-11-09',
-      details: 'details',
-      day: 'day',
-      location: 'location',
-      id: 6,
-      key: 6,
-
-    },
-    {
-      name: 'Wizard Fruit',
-      date: '2024-11-10',
-      details: 'details',
-      day: 'day',
-      location: 'location',
-      id: 6,
-      key: 6,
-
-    },
-    {
-      name: 'Speed Quiz',
-      date: '2024-11-13',
-      details: 'details',
-      day: 'day',
-      location: 'location',
-      id: 6,
-      key: 6,
-
-    },
-    {
-      name: 'Trafic Night',
-      date: '2024-11-13',
+      date: '2024-12-05',
       details: 'details',
       day: 'day',
       location: 'location',
@@ -129,7 +69,7 @@ const EventsPage = () => {
     },
     {
       name: 'Mini',
-      date: '2024-11-13',
+      date: '2024-12-06',
       details: 'details',
       day: 'day',
       location: 'location',
@@ -138,17 +78,38 @@ const EventsPage = () => {
 
     },
     {
-      name: 'Brendan',
-      date: '2024-11-13',
+      name: 'Ginty',
+      date: '2024-12-07',
       details: 'details',
       day: 'day',
       location: 'location',
       id: 6,
       key: 6,
+
+    },
+    {
+      name: 'Mor',
+      date: '2024-12-07',
+      details: 'details',
+      day: 'day',
+      location: 'location',
+      id: 6,
+      key: 6,
+
+    },
+    {
+      name: 'New Avenue',
+      date: '2024-12-08',
+      details: 'details',
+      day: 'day',
+      location: 'location',
+      id: 6,
+      key: 6,
+
     },
     {
       name: 'Dooleys',
-      date: '2024-11-14',
+      date: '2024-12-12',
       details: 'details',
       day: 'day',
       location: 'location',
@@ -158,7 +119,46 @@ const EventsPage = () => {
     },
     {
       name: 'Brendan',
-      date: '2024-11-15',
+      date: '2024-12-13',
+      details: 'details',
+      day: 'day',
+      location: 'location',
+      id: 6,
+      key: 6,
+
+    },
+    {
+      name: 'Mor',
+      date: '2024-12-14',
+      details: 'details',
+      day: 'day',
+      location: 'location',
+      id: 6,
+      key: 6,
+
+    },
+    {
+      name: 'Ewan',
+      date: '2024-12-14',
+      details: 'details',
+      day: 'day',
+      location: 'location',
+      id: 6,
+      key: 6,
+    },
+    {
+      name: 'Dale',
+      date: '2024-12-19',
+      details: 'details',
+      day: 'day',
+      location: 'location',
+      id: 6,
+      key: 6,
+
+    },
+    {
+      name: 'Brendan',
+      date: '2024-12-20',
       details: 'details',
       day: 'day',
       location: 'location',
@@ -167,7 +167,7 @@ const EventsPage = () => {
     },
     {
       name: 'Ginty',
-      date: '2024-11-16',
+      date: '2024-12-21',
       details: 'details',
       day: 'day',
       location: 'location',
@@ -176,7 +176,7 @@ const EventsPage = () => {
     },
     {
       name: 'Asophonics',
-      date: '2024-11-16',
+      date: '2024-12-21',
       details: 'details',
       day: 'day',
       location: 'location',
@@ -184,8 +184,8 @@ const EventsPage = () => {
       key: 6,
     },
     {
-      name: 'Off the Cuff',
-      date: '2024-11-17',
+      name: 'Forge',
+      date: '2024-12-26',
       details: 'details',
       day: 'day',
       location: 'location',
@@ -193,8 +193,8 @@ const EventsPage = () => {
       key: 6,
     },
     {
-      name: 'Speed Quiz',
-      date: '2024-11-20',
+      name: 'Brendan',
+      date: '2024-12-27',
       details: 'details',
       day: 'day',
       location: 'location',
@@ -202,8 +202,8 @@ const EventsPage = () => {
       key: 6,
     },
     {
-      name: 'Urban Shutdown',
-      date: '2024-11-20',
+      name: 'Mor',
+      date: '2024-12-28',
       details: 'details',
       day: 'day',
       location: 'location',
@@ -211,8 +211,8 @@ const EventsPage = () => {
       key: 6,
     },
     {
-      name: 'Aaron G',
-      date: '2024-11-21',
+      name: 'Ginty',
+      date: '2024-12-28',
       details: 'details',
       day: 'day',
       location: 'location',
