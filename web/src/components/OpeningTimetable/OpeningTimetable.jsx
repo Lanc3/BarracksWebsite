@@ -2,8 +2,8 @@ import {Link,routes} from '@redwoodjs/router'
 
 const OpeningTimetable = () => {
   const openingTimes = [
-    { day: 'Monday', time: 'CLOSED' },
-    { day: 'Tuesday', time: 'CLOSED' },
+    { day: 'Monday', time: '4 p.m – 11:30 p.m.' },
+    { day: 'Tuesday', time: '4 p.m – 11:30 p.m.' },
     { day: 'Wednesday', time: '4 p.m – 11:30 p.m.' },
     { day: 'Thursday', time: '4 p.m – 1:30 a.m.' },
     { day: 'Friday', time: '4 p.m – 2 a.m.' },
