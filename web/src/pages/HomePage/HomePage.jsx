@@ -24,8 +24,48 @@ import gal6 from '../../../public/GAL6.webp'
 import gal7 from '../../../public/GAL7.webp'
 import gal8 from '../../../public/GAL8.webp'
 import gal9 from '../../../public/GAL9.webp'
+import gal14 from '../../../public/gal/0001.jpg'
+import gal15 from '../../../public/gal/0001.jpg'
+import gal16 from '../../../public/gal/0001.jpg'
+import gal17 from '../../../public/gal/0001.jpg'
+import gal18 from '../../../public/gal/0001.jpg'
+import gal19 from '../../../public/gal/0001.jpg'
+import gal20 from '../../../public/gal/0001.jpg'
+import gal21 from '../../../public/gal/0001.jpg'
+import gal22 from '../../../public/gal/0001.jpg'
+import gal23 from '../../../public/gal/0001.jpg'
+import gal24 from '../../../public/gal/0001.jpg'
+import gal25 from '../../../public/gal/0001.jpg'
+import gal26 from '../../../public/gal/0001.jpg'
+import gal27 from '../../../public/gal/0001.jpg'
+import gal28 from '../../../public/gal/0001.jpg'
+import gal29 from '../../../public/gal/0001.jpg'
+import gal30 from '../../../public/gal/0001.jpg'
+import gal31 from '../../../public/gal/0001.jpg'
+import gal32 from '../../../public/gal/0001.jpg'
+import gal33 from '../../../public/gal/0001.jpg'
 const HomePage = () => {
   const images = [
+    gal14,
+    gal15,
+    gal16,
+    gal17,
+    gal18,
+    gal19,
+    gal20,
+    gal21,
+    gal22,
+    gal23,
+    gal24.
+    gal25,
+    gal26,
+    gal27,
+    gal28,
+    gal29,
+    gal30,
+    gal31,
+    gal32,
+    gal33,
     gal1,
     gal2,
     gal3,
