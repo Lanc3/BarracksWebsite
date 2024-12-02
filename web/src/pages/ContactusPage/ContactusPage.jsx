@@ -18,18 +18,18 @@ const ContactusPage = () => {
             <div className="align-center mt-4 items-center justify-center text-xl">
               <p className="text-white">
                 Email:{' '}
-                <a className="text-[#35B8DF]" href="mailto:info@thebarracks.ie">
+                <a className="text-white" href="mailto:info@thebarracks.ie">
                   info@thebarracks.ie
                 </a>
               </p>
               <p className="text-white">
-                Phone: <span className="text-[#35B8DF]">059 - 914 - 1781</span>
+                Phone: <span className="text-white">059 - 914 - 1781</span>
               </p>
             </div>
             <div className="mt-8 text-center">
               <Link
                 to={routes.home()}
-                className="text-[#35B8DF] hover:underline"
+                className="text-white hover:underline"
               >
                 Back to Home
               </Link>
