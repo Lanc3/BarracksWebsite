@@ -8,7 +8,7 @@ const OpeningTimetable = () => {
     { day: 'Thursday', time: '4 p.m – 1:30 a.m.' },
     { day: 'Friday', time: '4 p.m – 2 a.m.' },
     { day: 'Saturday', time: '3 p.m – 2 a.m.' },
-    { day: 'Sunday', time: '2 p.m – 2 a.m.' },
+    { day: 'Sunday', time: '1 p.m – 2 a.m.' },
   ];
 
   return (

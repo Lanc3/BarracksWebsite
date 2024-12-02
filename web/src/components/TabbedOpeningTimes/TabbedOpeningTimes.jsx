@@ -15,7 +15,7 @@ const TabbedComponent = ({openingTimes}) => {
   { day: 'Thursday', time: '4 p.m – 1:30 a.m.' },
   { day: 'Friday', time: '12 p.m – 2 a.m.' },
   { day: 'Saturday', time: '3 p.m – 2 a.m.' },
-  { day: 'Sunday', time: '3 p.m – 2 a.m.' },
+  { day: 'Sunday', time: '1 p.m – 2 a.m.' },
 ];
   const openingTimesCourtyard = [
     { day: 'Monday', time: 'CLOSED' },
@@ -33,7 +33,7 @@ const TabbedComponent = ({openingTimes}) => {
     { day: 'Thursday', time: '4 p.m – 10 p.m.' },
     { day: 'Friday', time: '12 p.m – 10 p.m.' },
     { day: 'Saturday', time: '3 p.m – 10 p.m.' },
-    { day: 'Sunday', time: '3 p.m – 10 p.m.' },
+    { day: 'Sunday', time: '1 p.m – 10 p.m.' },
   ];
   const contentVariants = {
     hidden: { x: '-100%', opacity: 0 },
