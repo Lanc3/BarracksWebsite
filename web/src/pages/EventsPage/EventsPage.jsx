@@ -8,8 +8,8 @@ import Particles from 'src/components/Particles/Particles'
 const EventsPage = () => {
   const EventsList = [
     {
-      name: 'After Dark',
-      date: '2024-12-01',
+      name: 'Dooleys',
+      date: '2025-01-23',
       details: 'All patreons must be over the age of 18',
       day: 'Thursday',
       location: 'Main Stage',
@@ -18,8 +18,8 @@ const EventsPage = () => {
 
     },
     {
-      name: 'Mor',
-      date: '2024-12-04',
+      name: 'Brendan',
+      date: '2025-01-24',
       details: 'details',
       day: 'Saturday',
       location: 'Courtyard',
@@ -28,8 +28,8 @@ const EventsPage = () => {
 
     },
     {
-      name: 'Speed Quiz',
-      date: '2024-12-04',
+      name: 'Asophonics',
+      date: '2025-01-25',
       details: 'details',
       day: 'Saturday',
       location: 'Main Stage',
@@ -38,8 +38,8 @@ const EventsPage = () => {
 
     },
     {
-      name: 'Urban Shutdown',
-      date: '2024-12-04',
+      name: 'Ginty',
+      date: '2025-01-25',
       details: 'details',
       day: 'Sunday',
       location: 'Main Stage',
@@ -48,8 +48,8 @@ const EventsPage = () => {
 
     },
     {
-      name: 'Student Xmas Day',
-      date: '2024-12-04',
+      name: 'Wizard Fruit',
+      date: '2025-01-26',
       details: 'details',
       day: 'Wednesday',
       location: 'Main Stage',
@@ -58,8 +58,18 @@ const EventsPage = () => {
 
     },
     {
+      name: 'Ewan',
+      date: '2025-01-29',
+      details: 'details',
+      day: 'day',
+      location: 'location',
+      id: 6,
+      key: 6,
+
+    },
+    {
       name: 'Dooleys',
-      date: '2024-12-05',
+      date: '2025-01-30',
       details: 'details',
       day: 'day',
       location: 'location',
@@ -68,18 +78,8 @@ const EventsPage = () => {
 
     },
     {
-      name: 'Mini',
-      date: '2024-12-06',
-      details: 'details',
-      day: 'day',
-      location: 'location',
-      id: 6,
-      key: 6,
-
-    },
-    {
-      name: 'Ginty',
-      date: '2024-12-07',
+      name: 'Brendan',
+      date: '2025-01-31',
       details: 'details',
       day: 'day',
       location: 'location',
@@ -292,26 +292,8 @@ const EventsPage = () => {
       key: 6,
     },
     {
-      name: 'Ginty',
-      date: '2024-11-30',
-      details: 'details',
-      day: 'day',
-      location: 'location',
-      id: 6,
-      key: 6,
-    },
-    {
-      name: 'Asophonics',
-      date: '2024-11-30',
-      details: 'details',
-      day: 'day',
-      location: 'location',
-      id: 6,
-      key: 6,
-    },
-    {
-      name: 'Mini',
-      date: '2024-10-30',
+      name: 'Fox Chase Hound',
+      date: '2025-01-12',
       details: 'details',
       day: 'day',
       location: 'location',
@@ -320,25 +302,7 @@ const EventsPage = () => {
     },
     {
       name: 'Dooleys',
-      date: '2024-10-31',
-      details: 'details',
-      day: 'day',
-      location: 'location',
-      id: 6,
-      key: 6,
-    },
-    {
-      name: 'After Dark',
-      date: '2024-06-23',
-      details: 'details',
-      day: 'day',
-      location: 'location',
-      id: 6,
-      key: 6,
-    },
-    {
-      name: 'Dooleys',
-      date: '2024-06-27',
+      date: '2025-01-16',
       details: 'details',
       day: 'day',
       location: 'location',
@@ -347,7 +311,43 @@ const EventsPage = () => {
     },
     {
       name: 'Brendan',
-      date: '2024-06-28',
+      date: '2025-01-17',
+      details: 'details',
+      day: 'day',
+      location: 'location',
+      id: 6,
+      key: 6,
+    },
+    {
+      name: 'Mor',
+      date: '2025-01-18',
+      details: 'details',
+      day: 'day',
+      location: 'location',
+      id: 6,
+      key: 6,
+    },
+    {
+      name: 'Ginty',
+      date: '2025-01-18',
+      details: 'details',
+      day: 'day',
+      location: 'location',
+      id: 6,
+      key: 6,
+    },
+    {
+      name: 'Foz Chase Hound',
+      date: '2025-01-19',
+      details: 'details',
+      day: 'day',
+      location: 'location',
+      id: 6,
+      key: 6,
+    },
+    {
+      name: 'Urban Shutdown',
+      date: '2025-01-22',
       details: 'details',
       day: 'day',
       location: 'location',
