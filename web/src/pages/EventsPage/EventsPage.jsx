@@ -8,8 +8,8 @@ import Particles from 'src/components/Particles/Particles'
 const EventsPage = () => {
   const EventsList = [
     {
-      name: 'Dooleys',
-      date: '2025-01-23',
+      name: 'Ewan',
+      date: '2025-03-07',
       details: 'All patreons must be over the age of 18',
       day: 'Thursday',
       location: 'Main Stage',
@@ -18,8 +18,8 @@ const EventsPage = () => {
 
     },
     {
-      name: 'Brendan',
-      date: '2025-01-24',
+      name: 'Aaron G',
+      date: '2025-03-08',
       details: 'details',
       day: 'Saturday',
       location: 'Courtyard',
@@ -28,8 +28,8 @@ const EventsPage = () => {
 
     },
     {
-      name: 'Asophonics',
-      date: '2025-01-25',
+      name: 'Brendan',
+      date: '2025-03-08',
       details: 'details',
       day: 'Saturday',
       location: 'Main Stage',
@@ -38,8 +38,8 @@ const EventsPage = () => {
 
     },
     {
-      name: 'Ginty',
-      date: '2025-01-25',
+      name: 'Wizard Fruit',
+      date: '2025-03-09',
       details: 'details',
       day: 'Sunday',
       location: 'Main Stage',
@@ -48,8 +48,8 @@ const EventsPage = () => {
 
     },
     {
-      name: 'Wizard Fruit',
-      date: '2025-01-26',
+      name: 'Dooleys',
+      date: '2025-03-13',
       details: 'details',
       day: 'Wednesday',
       location: 'Main Stage',
@@ -58,28 +58,8 @@ const EventsPage = () => {
 
     },
     {
-      name: 'Ewan',
-      date: '2025-01-29',
-      details: 'details',
-      day: 'day',
-      location: 'location',
-      id: 6,
-      key: 6,
-
-    },
-    {
-      name: 'Dooleys',
-      date: '2025-01-30',
-      details: 'details',
-      day: 'day',
-      location: 'location',
-      id: 6,
-      key: 6,
-
-    },
-    {
       name: 'Brendan',
-      date: '2025-01-31',
+      date: '2025-03-14',
       details: 'details',
       day: 'day',
       location: 'location',
@@ -88,8 +68,8 @@ const EventsPage = () => {
 
     },
     {
-      name: 'Mor',
-      date: '2024-12-07',
+      name: 'Asophonics',
+      date: '2025-03-15',
       details: 'details',
       day: 'day',
       location: 'location',
@@ -98,8 +78,8 @@ const EventsPage = () => {
 
     },
     {
-      name: 'New Avenue',
-      date: '2024-12-08',
+      name: 'Mini',
+      date: '2025-03-15',
       details: 'details',
       day: 'day',
       location: 'location',
@@ -108,8 +88,8 @@ const EventsPage = () => {
 
     },
     {
-      name: 'Dooleys',
-      date: '2024-12-12',
+      name: 'Mac Rua',
+      date: '2025-03-16',
       details: 'details',
       day: 'day',
       location: 'location',
@@ -118,18 +98,8 @@ const EventsPage = () => {
 
     },
     {
-      name: 'Brendan',
-      date: '2024-12-13',
-      details: 'details',
-      day: 'day',
-      location: 'location',
-      id: 6,
-      key: 6,
-
-    },
-    {
-      name: 'Mor',
-      date: '2024-12-14',
+      name: 'Ginty',
+      date: '2025-03-16',
       details: 'details',
       day: 'day',
       location: 'location',
@@ -139,7 +109,65 @@ const EventsPage = () => {
     },
     {
       name: 'Ewan',
-      date: '2024-12-14',
+      date: '2025-03-19',
+      details: 'details',
+      day: 'day',
+      location: 'location',
+      id: 6,
+      key: 6,
+
+    },
+    {
+      name: 'Dooleys',
+      date: '2025-03-20',
+      details: 'details',
+      day: 'day',
+      location: 'location',
+      id: 6,
+      key: 6,
+
+    },
+    {
+      name: 'Brendan',
+      date: '2025-03-21',
+      details: 'details',
+      day: 'day',
+      location: 'location',
+      id: 6,
+      key: 6,
+
+    },
+    {
+      name: 'Aaronn G',
+      date: '2025-03-22',
+      details: 'details',
+      day: 'day',
+      location: 'location',
+      id: 6,
+      key: 6,
+    },
+    {
+      name: 'Ginty',
+      date: '2025-03-22',
+      details: 'details',
+      day: 'day',
+      location: 'location',
+      id: 6,
+      key: 6,
+
+    },
+    {
+      name: 'Wizard Fruit',
+      date: '2025-03-23',
+      details: 'details',
+      day: 'day',
+      location: 'location',
+      id: 6,
+      key: 6,
+    },
+    {
+      name: 'Urban Shutdown',
+      date: '2025-03-26',
       details: 'details',
       day: 'day',
       location: 'location',
@@ -148,26 +176,16 @@ const EventsPage = () => {
     },
     {
       name: 'Dale',
-      date: '2024-12-19',
+      date: '2025-03-27',
       details: 'details',
       day: 'day',
       location: 'location',
       id: 6,
       key: 6,
-
     },
     {
       name: 'Brendan',
-      date: '2024-12-20',
-      details: 'details',
-      day: 'day',
-      location: 'location',
-      id: 6,
-      key: 6,
-    },
-    {
-      name: 'Ginty',
-      date: '2024-12-21',
+      date: '2025-03-28',
       details: 'details',
       day: 'day',
       location: 'location',
@@ -176,34 +194,7 @@ const EventsPage = () => {
     },
     {
       name: 'Asophonics',
-      date: '2024-12-21',
-      details: 'details',
-      day: 'day',
-      location: 'location',
-      id: 6,
-      key: 6,
-    },
-    {
-      name: 'Forge',
-      date: '2024-12-26',
-      details: 'details',
-      day: 'day',
-      location: 'location',
-      id: 6,
-      key: 6,
-    },
-    {
-      name: 'Brendan',
-      date: '2024-12-27',
-      details: 'details',
-      day: 'day',
-      location: 'location',
-      id: 6,
-      key: 6,
-    },
-    {
-      name: 'Mor',
-      date: '2024-12-28',
+      date: '2025-03-29',
       details: 'details',
       day: 'day',
       location: 'location',
@@ -212,7 +203,16 @@ const EventsPage = () => {
     },
     {
       name: 'Ginty',
-      date: '2024-12-28',
+      date: '2025-03-29',
+      details: 'details',
+      day: 'day',
+      location: 'location',
+      id: 6,
+      key: 6,
+    },
+    {
+      name: 'Fox Chase Hound',
+      date: '2025-03-30',
       details: 'details',
       day: 'day',
       location: 'location',
