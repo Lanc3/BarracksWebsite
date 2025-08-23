@@ -60,7 +60,7 @@ const AboutusPage = () => {
             We do not tolerate any form of aggression, assault, discrimination, exclusion, harassment, or violence, including (but not limited to) ableism, antisemitism, body shaming, bullying, intimidation, Islamophobia, racism, queerphobia, sexism, sexual misconduct, or transphobia. Guests who are visibly drunk, on drugs, or disruptive and uncooperative will not be allowed to enter.
           </p>
           <p className="mb-6">
-            If you experience discomfort or any harassment or become a witness of such behavior, please immediately report it to any of our staff members. Left Bank has experienced, well-trained team members who protect the guests' safety and care for their comfort.
+            If you experience discomfort or any harassment or become a witness of such behavior, please immediately report it to any of our staff members. The Barracks has experienced, well-trained team members who protect the guests' safety and care for their comfort.
           </p>
 
           <ul className="mb-8 list-inside space-y-2 list-disc">
