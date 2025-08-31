@@ -60,30 +60,7 @@ const MobileNavigation = () => {
                   </span>
                 </Link>
               </motion.li>
-              <motion.li
-                initial={{ scale: 0, opacity: 0 }}
-                animate={{ scale: 1, opacity: 1 }}
-                transition={{
-                  type: 'spring',
-                  stiffness: 260,
-                  damping: 20,
-                  delay: 0.1 + 1 / 10,
-                }}
-                key={'events'}
-                className="z-200 "
-              >
-                <Link
-                  onClick={() => setOpen((prev) => !prev)}
-                  className={
-                    'btn-sm group relative w-full py-0.5 text-slate-300 shadow transition duration-150 ease-in-out [background:linear-gradient(theme(colors.purple.500),_theme(colors.purple.500))_padding-box,_linear-gradient(theme(colors.purple.500),_theme(colors.purple.200)_75%,_theme(colors.transparent)_100%)_border-box] before:pointer-events-none before:absolute before:inset-0 before:rounded-full before:bg-slate-800/50 hover:text-white'
-                  }
-                  to={routes.events()}
-                >
-                  <span className="flex gap-1 text-lg text-white hover:relative">
-                    Events
-                  </span>
-                </Link>
-              </motion.li>
+
               <motion.li
                 initial={{ scale: 0, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}

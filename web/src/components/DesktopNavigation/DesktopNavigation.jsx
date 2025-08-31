@@ -45,13 +45,6 @@ const DesktopNavigation = () => {
                   </p>
                 </Link>
               </div>
-              <div className="h5 justify-left col-span-1 inline-flex bg-gradient-to-r from-green-500 to-green-200  bg-clip-text pb-3 text-transparent transition duration-300 ease-in-out hover:scale-110 hover:text-[#35B8DF]">
-                <Link to={routes.events()}>
-                  <p className="ml-6 whitespace-nowrap pl-2 font-extrabold">
-                    Events
-                  </p>
-                </Link>
-              </div>
               <div className="h5 justify-left col-span-1 inline-flex  bg-gradient-to-r from-green-500 to-green-200 bg-clip-text pb-3 text-transparent transition duration-300 ease-in-out hover:scale-110 hover:text-[#35B8DF]">
                 <Link to={routes.openingTimes()}>
                   <p className="whitespace-nowrap font-extrabold">Open Times</p>
