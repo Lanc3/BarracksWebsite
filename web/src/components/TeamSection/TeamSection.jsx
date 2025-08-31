@@ -88,60 +88,11 @@ const TeamSection = () => {
             <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 text-white">
               <p>Nicola</p>
             </h3>
-            <p className="text-base font-medium bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-purple-200 pb-0.5">Bar Supervisor</p>
+            <p className="text-base font-medium bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-purple-200 pb-0.5">Media/Events Manager</p>
 
           </div>
 
-          <div className="text-center text-gray-500 dark:text-gray-400">
-            <img
-              className="mx-auto mb-4 h-36 w-36 rounded-full object-cover"
-              src={sapphire}
-              alt="Michael Avatar"
-            />
-            <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 text-white">
-              <p>Sapphire</p>
-            </h3>
-            <p className="text-base font-medium bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-purple-200 pb-0.5">Bartender</p>
 
-          </div>
-
-          <div className="text-center text-gray-500 dark:text-gray-400">
-            <img
-              className="mx-auto mb-4 h-36 w-36 rounded-full object-cover"
-              src={cian}
-              alt="Neil Avatar"
-            />
-            <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 text-white">
-              <p>Cian</p>
-            </h3>
-            <p className="text-base font-medium bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-purple-200 pb-0.5">Bartender</p>
-
-          </div>
-          <div className="text-center text-gray-500 dark:text-gray-400">
-            <img
-              className="mx-auto mb-4 h-36 w-36 rounded-full object-cover"
-              src={danny}
-              alt="Neil Avatar"
-            />
-            <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 text-white">
-              <p>Daniel</p>
-            </h3>
-            <p className="text-base font-medium bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-purple-200 pb-0.5">Bartender</p>
-
-          </div>
-
-          <div className="text-center text-gray-500 dark:text-gray-400">
-            <img
-              className="mx-auto mb-4 h-36 w-36 rounded-full object-cover"
-              src={eliza}
-              alt="Neil Avatar"
-            />
-            <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 text-white">
-              <p>Eliza </p>
-            </h3>
-            <p className="text-base font-medium bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-purple-200 pb-0.5">Floor Staff</p>
-
-          </div>
           <div className="text-center text-gray-500 dark:text-gray-400">
             <img
               className="mx-auto mb-4 h-36 w-36 rounded-full object-cover"
@@ -152,44 +103,6 @@ const TeamSection = () => {
               <p>Filip</p>
             </h3>
             <p className="text-base font-medium bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-purple-200 pb-0.5">Floor Head</p>
-
-          </div>
-          <div className="text-center text-gray-500 dark:text-gray-400">
-            <img
-              className="mx-auto mb-4 h-36 w-36 rounded-full object-cover"
-              src={kotrina}
-              alt="Neil Avatar"
-            />
-            <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 text-white">
-              <p>Kotrina</p>
-            </h3>
-            <p className="text-base font-medium bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-purple-200 pb-0.5">Floor/Bar Staff</p>
-
-          </div>
-
-          <div className="text-center text-gray-500 dark:text-gray-400">
-            <img
-              className="mx-auto mb-4 h-36 w-36 rounded-full object-cover"
-              src={cody}
-              alt="Neil Avatar"
-            />
-            <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 text-white">
-              <p>Cody</p>
-            </h3>
-            <p className="text-base font-medium bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-purple-200 pb-0.5">Bar Back</p>
-
-          </div>
-
-          <div className="text-center text-gray-500 dark:text-gray-400">
-            <img
-              className="mx-auto mb-4 h-36 w-36 rounded-full"
-              src={notfopund}
-              alt="Neil Avatar"
-            />
-            <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 text-white">
-              <p>Aaron</p>
-            </h3>
-            <p className="text-base font-medium bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-purple-200 pb-0.5">Bar Back</p>
 
           </div>
 
