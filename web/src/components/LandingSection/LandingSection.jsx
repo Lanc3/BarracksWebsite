@@ -67,7 +67,7 @@ const LandingSection = () => {
                     </span>
                   </Link>
                 </div>
-                <div>
+                {/* <div>
                   <Link
                     className="btn w-full bg-slate-900 bg-opacity-25 text-slate-200 transition duration-150 ease-in-out hover:bg-opacity-30 hover:text-white"
                     to={routes.events()}
@@ -77,7 +77,7 @@ const LandingSection = () => {
                     <FaArrowRight />
                     </span>
                   </Link>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
