@@ -1,5 +1,5 @@
 datasource db {
-  provider = "sqlite"
+  provider = "postgresql"
   url      = env("DATABASE_URL")
 }
 
@@ -9,7 +9,38 @@ generator client {
 }
 
 model Event {
-  id        Int      @id @default(autoincrement())
-  name     String
-  date     String
+  id   Int    @id @default(autoincrement())
+  name String
+  date String
+}
+
+model User {
+  id                  Int       @id @default(autoincrement())
+  email               String    @unique
+  hashedPassword      String
+  salt                String
+  resetToken          String?
+  resetTokenExpiresAt DateTime?
+  roles               String    @default("user")
+  createdAt           DateTime  @default(now())
+  updatedAt           DateTime  @updatedAt
+}
+
+model Drink {
+  id          Int      @id @default(autoincrement())
+  name        String
+  slug        String   @unique
+  description String?
+  category    String   // e.g., "Cocktails", "Beer", "Wine", "Spirits", "Soft"
+  priceCents  Int      @default(0) // admin-only, not shown on public menu
+  abv         Float?   // alcohol by volume percentage
+  ingredients String[] @default([]) // Native PostgreSQL array
+  isFeatured  Boolean  @default(false)
+  isActive    Boolean  @default(true)
+  sortOrder   Int      @default(0)
+  iconKey     String?  // reference to SVG icon (e.g., "cocktail", "beer", "wine")
+  imageUrl    String?
+  tags        String[] @default([]) // Native PostgreSQL array
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
 }

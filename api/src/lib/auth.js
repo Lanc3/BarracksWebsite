@@ -1,25 +1,69 @@
+import { AuthenticationError, ForbiddenError } from '@redwoodjs/graphql-server'
+
+import { db } from './db'
+
 /**
- * Once you are ready to add authentication to your application
- * you'll build out requireAuth() with real functionality. For
- * now we just return `true` so that the calls in services
- * have something to check against, simulating a logged
- * in user that is allowed to access that service.
- *
- * See https://redwoodjs.com/docs/authentication for more info.
+ * The session is decoded from the cookie by the `authDecoder`
+ * and returns the user's ID. We then look up the user in the database.
+ */
+export const getCurrentUser = async (session) => {
+  if (!session || typeof session.id !== 'number') {
+    throw new AuthenticationError('Invalid session')
+  }
+
+  return await db.user.findUnique({
+    where: { id: session.id },
+    select: { id: true, email: true, roles: true },
+  })
+}
+
+/**
+ * Check if the current user is authenticated.
  */
 export const isAuthenticated = () => {
-  return true
+  return !!context.currentUser
 }
 
-export const hasRole = ({ roles }) => {
-  return roles !== undefined
+/**
+ * Check if the current user has one of the specified roles.
+ * Roles can be a single string or an array of strings.
+ */
+export const hasRole = (roles) => {
+  if (!isAuthenticated()) {
+    return false
+  }
+
+  const currentUserRoles = context.currentUser?.roles
+
+  if (typeof roles === 'string') {
+    if (typeof currentUserRoles === 'string') {
+      return currentUserRoles === roles
+    } else if (Array.isArray(currentUserRoles)) {
+      return currentUserRoles.includes(roles)
+    }
+  }
+
+  if (Array.isArray(roles)) {
+    if (typeof currentUserRoles === 'string') {
+      return roles.includes(currentUserRoles)
+    } else if (Array.isArray(currentUserRoles)) {
+      return roles.some((role) => currentUserRoles.includes(role))
+    }
+  }
+
+  return false
 }
 
-// This is used by the redwood directive
-// in ./api/src/directives/requireAuth
+/**
+ * Require authentication to access the resource.
+ * Optionally check for specific roles.
+ */
+export const requireAuth = ({ roles } = {}) => {
+  if (!isAuthenticated()) {
+    throw new AuthenticationError("You don't have permission to do that.")
+  }
 
-// Roles are passed in by the requireAuth directive if you have auth setup
-// eslint-disable-next-line no-unused-vars, @typescript-eslint/no-unused-vars
-export const requireAuth = ({ roles }) => {
-  return isAuthenticated()
+  if (roles && !hasRole(roles)) {
+    throw new ForbiddenError("You don't have access to do that.")
+  }
 }

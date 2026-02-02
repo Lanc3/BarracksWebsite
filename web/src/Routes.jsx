@@ -7,15 +7,19 @@
 // 'src/pages/HomePage/HomePage.js'         -> HomePage
 // 'src/pages/Admin/BooksPage/BooksPage.js' -> AdminBooksPage
 
-import { Router, Route, Set } from '@redwoodjs/router'
+import { Router, Route, Set, Private } from '@redwoodjs/router'
 
 import ScaffoldLayout from 'src/layouts/ScaffoldLayout'
 
+import { useAuth } from './auth'
+import AdminLayout from './layouts/AdminLayout/AdminLayout'
 import MainLayout from './layouts/MainLayout/MainLayout'
 
 const Routes = () => {
   return (
-    <Router>
+    <Router useAuth={useAuth}>
+      {/* Public routes */}
+      <Route path="/login" page={LoginPage} name="login" />
 
       <Set wrap={MainLayout}>
         <Route path="/" page={HomePage} name="home" />
@@ -24,12 +28,21 @@ const Routes = () => {
         <Route path="/menu" page={MenuPage} name="menu" />
         <Route path="/aboutus" page={AboutusPage} name="aboutus" />
         <Route path="/roadmap" page={RoadmapPage} name="roadmap" />
-        <Route notfound page={NotFoundPage} />
         <Route path="/terms" page={TermsPage} name="terms" />
         <Route path="/opening-times" page={OpeningTimesPage} name="openingTimes" />
-
       </Set>
-      <Route notfound page={NotFoundPage}></Route>
+
+      {/* Admin routes - require authentication */}
+      <Private unauthenticated="login">
+        <Set wrap={AdminLayout}>
+          <Route path="/admin/drinks" page={AdminDrinkDrinksPage} name="adminDrinks" />
+          <Route path="/admin/drinks/new" page={AdminDrinkNewDrinkPage} name="adminNewDrink" />
+          <Route path="/admin/drinks/{id:Int}" page={AdminDrinkDrinkPage} name="adminDrink" />
+          <Route path="/admin/drinks/{id:Int}/edit" page={AdminDrinkEditDrinkPage} name="adminEditDrink" />
+        </Set>
+      </Private>
+
+      <Route notfound page={NotFoundPage} />
     </Router>
   )
 }

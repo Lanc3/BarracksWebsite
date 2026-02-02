@@ -29,7 +29,7 @@ const drinkVariants = {
           duration: 1.5,
           ease: 'easeInOut',
           times: [0, 0.2, 0.4, 0.6, 1], // Keyframes for the animation
-          loop: Infinity, // Loop the animation
+          repeat: Infinity, // Loop the animation
         },
   }
 };
@@ -51,7 +51,7 @@ const DrinkCard = ({ icon, hueA, hueB ,title, ingrediantsList}) => {
           duration: 1.5,
           ease: 'easeInOut',
           times: [0, 0.2, 0.4, 0.6, 1], // Keyframes for the animation
-          loop: Infinity, // Loop the animation
+          repeat: Infinity, // Loop the animation
         },
       })
 

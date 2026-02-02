@@ -1,62 +1,338 @@
+import { hashPassword } from '@redwoodjs/auth-dbauth-api'
+
 import { db } from 'api/src/lib/db'
 
 export default async () => {
   try {
-    //
-    // Manually seed via `yarn rw prisma db seed`
-    // Seeds automatically with `yarn rw prisma migrate dev` and `yarn rw prisma migrate reset`
-    //
-    // Update "const data = []" to match your data model and seeding needs
-    //
-    const data = [
-      // To try this example data with the UserExample model in schema.prisma,
-      // uncomment the lines below and run 'yarn rw prisma migrate dev'
-      //
-      // { name: 'alice', email: 'alice@example.com' },
-      // { name: 'mark', email: 'mark@example.com' },
-      // { name: 'jackie', email: 'jackie@example.com' },
-      // { name: 'bob', email: 'bob@example.com' },
+    console.log('\n🌱 Seeding database...\n')
+
+    // Create admin user
+    const [hashedPassword, salt] = hashPassword('admin123')
+    const adminUser = await db.user.upsert({
+      where: { email: 'admin@barracks.local' },
+      update: {},
+      create: {
+        email: 'admin@barracks.local',
+        hashedPassword,
+        salt,
+        roles: 'admin',
+      },
+    })
+    console.log(`✅ Admin user created: ${adminUser.email}`)
+
+    // Sample drinks data (from existing MenuPage)
+    const drinks = [
+      {
+        name: 'Bahama Mama',
+        slug: 'bahama-mama',
+        description: 'A tropical paradise in a glass with coconut and citrus notes',
+        category: 'Cocktails',
+        priceCents: 950,
+        abv: 12.5,
+        ingredients: ['Coconut Rum', 'White Rum', 'Pineapple Juice', 'Orange Juice', 'Grenadine'],
+        isFeatured: true,
+        isActive: true,
+        sortOrder: 1,
+        iconKey: 'cocktail',
+        tags: ['Tropical', 'Popular'],
+      },
+      {
+        name: "Bee's Knees",
+        slug: 'bees-knees',
+        description: 'A prohibition-era classic with local organic honey',
+        category: 'Cocktails',
+        priceCents: 900,
+        abv: 18.0,
+        ingredients: ['Gin', 'Passion Fruit Liquor', 'Fresh Lime Juice', 'Local Organic Honey'],
+        isFeatured: false,
+        isActive: true,
+        sortOrder: 2,
+        iconKey: 'cocktail',
+        tags: ['Classic'],
+      },
+      {
+        name: 'Zombie',
+        slug: 'zombie',
+        description: 'A potent tiki classic that will raise your spirits',
+        category: 'Cocktails',
+        priceCents: 1000,
+        abv: 22.0,
+        ingredients: ['Three Rums', 'Fresh Lime Juice', 'Pineapple Juice', 'Grenadine'],
+        isFeatured: true,
+        isActive: true,
+        sortOrder: 3,
+        iconKey: 'cocktail',
+        tags: ['Strong', 'Tiki'],
+      },
+      {
+        name: 'Blue Lagoon',
+        slug: 'blue-lagoon',
+        description: 'A refreshing blue beauty perfect for summer nights',
+        category: 'Cocktails',
+        priceCents: 850,
+        abv: 10.0,
+        ingredients: ['Vodka', 'Blue Curacao', 'Fresh Lime Juice', 'House Syrup', '7up Top'],
+        isFeatured: false,
+        isActive: true,
+        sortOrder: 4,
+        iconKey: 'cocktail',
+        tags: ['Refreshing'],
+      },
+      {
+        name: 'Margarita',
+        slug: 'margarita',
+        description: 'The perfect balance of tequila, citrus, and sweetness',
+        category: 'Cocktails',
+        priceCents: 900,
+        abv: 15.0,
+        ingredients: ['Tequila', 'Cointreau', 'House Syrup', 'Fresh Lime Juice', 'Fruit Puree Top'],
+        isFeatured: true,
+        isActive: true,
+        sortOrder: 5,
+        iconKey: 'cocktail',
+        tags: ['Classic', 'Popular'],
+      },
+      {
+        name: 'Pornstar Martini',
+        slug: 'pornstar-martini',
+        description: 'Passion fruit perfection served with a prosecco shot',
+        category: 'Cocktails',
+        priceCents: 1100,
+        abv: 14.0,
+        ingredients: ['Vanilla Vodka', 'Passion Fruit Liquor', 'Fresh Lime Juice', 'Passion Fruit Puree', 'Pineapple Juice', 'Prosecco Top'],
+        isFeatured: true,
+        isActive: true,
+        sortOrder: 6,
+        iconKey: 'martini',
+        tags: ['Signature', 'Popular'],
+      },
+      {
+        name: 'Sex on the Beach',
+        slug: 'sex-on-the-beach',
+        description: 'A vibrant, sun-kissed paradise that transports you to the beach',
+        category: 'Cocktails',
+        priceCents: 850,
+        abv: 11.0,
+        ingredients: ['Vodka', 'Peach Schnapps', 'Orange Juice', 'Cranberry Juice'],
+        isFeatured: false,
+        isActive: true,
+        sortOrder: 7,
+        iconKey: 'cocktail',
+        tags: ['Fruity'],
+      },
+      {
+        name: 'Daiquiri',
+        slug: 'daiquiri',
+        description: 'Simple, elegant, and endlessly customizable',
+        category: 'Cocktails',
+        priceCents: 800,
+        abv: 16.0,
+        ingredients: ['White Rum', 'Fresh Lime Juice', 'Fruit Puree Of Choice'],
+        isFeatured: false,
+        isActive: true,
+        sortOrder: 8,
+        iconKey: 'cocktail',
+        tags: ['Classic'],
+      },
+      {
+        name: 'Cosmopolitan',
+        slug: 'cosmopolitan',
+        description: 'The iconic pink cocktail that never goes out of style',
+        category: 'Cocktails',
+        priceCents: 950,
+        abv: 17.0,
+        ingredients: ['Vodka', 'Orange Liquor', 'Fresh Lime Juice', 'Cranberry Juice'],
+        isFeatured: false,
+        isActive: true,
+        sortOrder: 9,
+        iconKey: 'martini',
+        tags: ['Classic'],
+      },
+      {
+        name: 'Long Island Ice Tea',
+        slug: 'long-island-ice-tea',
+        description: 'Five spirits unite in this deceptively smooth classic',
+        category: 'Cocktails',
+        priceCents: 1000,
+        abv: 22.0,
+        ingredients: ['Vodka', 'Gin', 'Tequila', 'Rum', 'Orange Liquor', 'Sweet & Sour Mix', 'Cola Top'],
+        isFeatured: true,
+        isActive: true,
+        sortOrder: 10,
+        iconKey: 'cocktail',
+        tags: ['Strong', 'Classic'],
+      },
+      {
+        name: 'Mojito',
+        slug: 'mojito',
+        description: 'Fresh mint and lime in the ultimate summer refresher',
+        category: 'Cocktails',
+        priceCents: 850,
+        abv: 10.0,
+        ingredients: ['Rum of Choice', 'Mint', 'Fresh Lime Juice', 'House Syrup', 'Soda Top'],
+        isFeatured: true,
+        isActive: true,
+        sortOrder: 11,
+        iconKey: 'cocktail',
+        tags: ['Refreshing', 'Popular'],
+      },
+      {
+        name: 'Barracks Blue-Woo',
+        slug: 'barracks-blue-woo',
+        description: 'Our signature blue creation, unique to The Barracks',
+        category: 'Cocktails',
+        priceCents: 900,
+        abv: 12.0,
+        ingredients: ['Raspberry Rum', 'Blue Curacao', 'Fresh Lemon Juice', 'Cranberry Juice', '7up Top'],
+        isFeatured: true,
+        isActive: true,
+        sortOrder: 12,
+        iconKey: 'cocktail',
+        tags: ['Signature', 'House Special'],
+      },
+      {
+        name: 'Whiskey Sour',
+        slug: 'whiskey-sour',
+        description: 'Slane Irish Whiskey shaken with citrus and egg white',
+        category: 'Cocktails',
+        priceCents: 950,
+        abv: 18.0,
+        ingredients: ['Slane Whiskey', 'Fresh Lemon Juice', 'Bitters', 'House Syrup', 'Whites'],
+        isFeatured: false,
+        isActive: true,
+        sortOrder: 13,
+        iconKey: 'cocktail',
+        tags: ['Classic'],
+      },
+      {
+        name: 'Appletini-Weenie',
+        slug: 'appletini-weenie',
+        description: 'Apple slush meets vodka for a frosty treat',
+        category: 'Slushies',
+        priceCents: 850,
+        abv: 12.0,
+        ingredients: ['Vodka', 'Apple Slush', 'Fresh Lime Juice'],
+        isFeatured: false,
+        isActive: true,
+        sortOrder: 14,
+        iconKey: 'slush',
+        tags: ['Frozen'],
+      },
+      {
+        name: 'Melon Sour',
+        slug: 'melon-sour',
+        description: 'Bright green Midori in a silky sour',
+        category: 'Cocktails',
+        priceCents: 900,
+        abv: 14.0,
+        ingredients: ['Midori', 'Fresh Lemon Juice', 'House Syrup', 'Whites'],
+        isFeatured: false,
+        isActive: true,
+        sortOrder: 15,
+        iconKey: 'cocktail',
+        tags: ['Sour'],
+      },
+      {
+        name: 'Nebula',
+        slug: 'nebula',
+        description: 'A cosmic blue raspberry creation from another galaxy',
+        category: 'Slushies',
+        priceCents: 850,
+        abv: 11.0,
+        ingredients: ['Raspberry Rum', 'Fresh Lime Juice', 'Blue Raspberry Slush'],
+        isFeatured: true,
+        isActive: true,
+        sortOrder: 16,
+        iconKey: 'slush',
+        tags: ['Signature', 'Frozen'],
+      },
+      {
+        name: 'Amaretto Sour',
+        slug: 'amaretto-sour',
+        description: 'Sweet almond Disaronno in a perfectly balanced sour',
+        category: 'Cocktails',
+        priceCents: 900,
+        abv: 14.0,
+        ingredients: ['Disaronno', 'Fresh Lemon Juice', 'Bitters', 'House Syrup', 'Whites'],
+        isFeatured: false,
+        isActive: true,
+        sortOrder: 17,
+        iconKey: 'cocktail',
+        tags: ['Sour'],
+      },
+      {
+        name: 'Captain Marvel',
+        slug: 'captain-marvel',
+        description: 'Heroic flavors of peach and blue raspberry',
+        category: 'Slushies',
+        priceCents: 850,
+        abv: 11.0,
+        ingredients: ['Vodka', 'Peach Schnapps', 'Fresh Lemon Juice', 'Blue Raspberry Slush'],
+        isFeatured: false,
+        isActive: true,
+        sortOrder: 18,
+        iconKey: 'slush',
+        tags: ['Frozen'],
+      },
+      {
+        name: 'Sour Barbie',
+        slug: 'sour-barbie',
+        description: 'Pink gin perfection in a strawberry dream',
+        category: 'Cocktails',
+        priceCents: 900,
+        abv: 12.0,
+        ingredients: ['Pink Gin', 'Fresh Lemon Juice', 'House Syrup', '7up Top', 'Strawberry Puree'],
+        isFeatured: false,
+        isActive: true,
+        sortOrder: 19,
+        iconKey: 'cocktail',
+        tags: ['Sour', 'Fruity'],
+      },
+      {
+        name: 'Slush Daiquiri',
+        slug: 'slush-daiquiri',
+        description: 'Choose from five flavors of frozen paradise',
+        category: 'Slushies',
+        priceCents: 800,
+        abv: 12.0,
+        ingredients: ['5 Flavours Of Slush', 'Rum', 'Fresh Lime Juice'],
+        isFeatured: false,
+        isActive: true,
+        sortOrder: 20,
+        iconKey: 'slush',
+        tags: ['Frozen'],
+      },
+      {
+        name: 'Passionate One',
+        slug: 'passionate-one',
+        description: 'Mango vodka meets passion fruit in tropical bliss',
+        category: 'Slushies',
+        priceCents: 850,
+        abv: 11.0,
+        ingredients: ['Mango Vodka', 'Passion Fruit Slush', 'Fresh Lime Juice'],
+        isFeatured: false,
+        isActive: true,
+        sortOrder: 21,
+        iconKey: 'slush',
+        tags: ['Tropical', 'Frozen'],
+      },
     ]
-    console.log(
-      "\nUsing the default './scripts/seed.{js,ts}' template\nEdit the file to add seed data\n"
-    )
 
-    // Note: if using PostgreSQL, using `createMany` to insert multiple records is much faster
-    // @see: https://www.prisma.io/docs/reference/api-reference/prisma-client-reference#createmany
-    Promise.all(
-      //
-      // Change to match your data model and seeding needs
-      //
-      data.map(async (data) => {
-        const record = await db.userExample.create({ data })
-        console.log(record)
+    // Insert drinks (native PostgreSQL arrays)
+    for (const drink of drinks) {
+      await db.drink.upsert({
+        where: { slug: drink.slug },
+        update: drink,
+        create: drink,
       })
-    )
+    }
+    console.log(`✅ Created ${drinks.length} drinks`)
 
-    // If using dbAuth and seeding users, you'll need to add a `hashedPassword`
-    // and associated `salt` to their record. Here's how to create them using
-    // the same algorithm that dbAuth uses internally:
-    //
-    //   import { hashPassword } from '@redwoodjs/auth-dbauth-api'
-    //
-    //   const users = [
-    //     { name: 'john', email: 'john@example.com', password: 'secret1' },
-    //     { name: 'jane', email: 'jane@example.com', password: 'secret2' }
-    //   ]
-    //
-    //   for (const user of users) {
-    //     const [hashedPassword, salt] = hashPassword(user.password)
-    //     await db.user.create({
-    //       data: {
-    //         name: user.name,
-    //         email: user.email,
-    //         hashedPassword,
-    //         salt
-    //       }
-    //     })
-    //   }
+    console.log('\n🎉 Seeding complete!\n')
+    console.log('Admin login: admin@barracks.local / admin123')
+    console.log('Navigate to /admin/drinks to manage the menu\n')
   } catch (error) {
-    console.warn('Please define your seed data.')
-    console.error(error)
+    console.error('Seeding error:', error)
+    process.exit(1)
   }
 }

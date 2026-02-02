@@ -1,16 +1,31 @@
-/**
- * START --- SETUP TAILWINDCSS EDIT
- *
- * `yarn rw setup ui tailwindcss` placed these directives here
- * to inject Tailwind's styles into your CSS.
- * For more information, see: https://tailwindcss.com/docs/installation
- */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-/**
- * END --- SETUP TAILWINDCSS EDIT
- */
+@import "tailwindcss";
+
+/* Custom theme extensions for Tailwind CSS 4 */
+@theme {
+  /* Custom clip-path */
+  --clip-path-parallelogram: polygon(13% 0, 100% 0, 71% 85%, 10% 100%);
+
+  /* Custom font family */
+  --font-custom: 'CustomFont', sans-serif;
+}
+
+/* Custom background images (utilities since Tailwind 4 handles these differently) */
+@utility bg-act-pattern {
+  background-image: url('../public/BackgroundActs.png');
+}
+
+@utility bg-cloud-pattern {
+  background-image: url('../public/Mediamodifier-Design.svg');
+}
+
+@utility bg-front {
+  background-image: url('../public/barracks-carlow_0688.jpg');
+}
+
+/* Custom clip-path utility */
+@utility clip-parallelogram {
+  clip-path: polygon(13% 0, 100% 0, 71% 85%, 10% 100%);
+}
 /* Typography */
 .h1 {
     @apply text-5xl font-extrabold;
@@ -31,7 +46,7 @@
   @apply text-lg font-extrabold;
 }
 
-@screen md {
+@media (width >= 768px) {
     .h1 {
         @apply text-6xl;
     }
@@ -106,13 +121,20 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 /* Chrome, Safari and Opera */
-.no-scrollbar::-webkit-scrollbar {
+.no-scrollbar::-webkit-scrollbar,
+.scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
 
-.no-scrollbar {
+.no-scrollbar,
+.scrollbar-hide {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
+}
+
+/* Safe area padding for mobile bottom sheets */
+.pb-safe {
+  padding-bottom: max(2rem, env(safe-area-inset-bottom));
 }
 .form-input:focus,
 .form-textarea:focus,

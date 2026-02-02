@@ -25,7 +25,7 @@ export default function Clients() {
       slidesPerView: 'auto',
       spaceBetween: 64,
       centeredSlides: true,
-      loop: true,
+      repeat: Infinity,
       speed: 5000,
       noSwiping: true,
       noSwipingClass: 'swiper-slide',
