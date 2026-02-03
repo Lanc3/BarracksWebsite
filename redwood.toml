@@ -8,7 +8,7 @@
 [web]
   title = "The Barracks"
   port = 8913
-  apiUrl = "/.redwood/functions" # You can customize graphql and dbauth urls individually too: see https://redwoodjs.com/docs/app-configuration-redwood-toml#api-paths
+  apiUrl = "/api" # Updated for Vercel deployment (works for both local dev and Vercel)
   includeEnvironmentVariables = [
     # Add any ENV vars that should be available to the web side to this array
     # See https://redwoodjs.com/docs/environment-variables#web
