@@ -34,6 +34,12 @@ const AdminLayout = ({ children }) => {
                   Drinks
                 </Link>
                 <Link
+                  to={routes.adminQRCode()}
+                  className="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 transition-colors"
+                >
+                  QR Code
+                </Link>
+                <Link
                   to={routes.menu()}
                   className="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 transition-colors"
                 >

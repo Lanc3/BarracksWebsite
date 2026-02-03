@@ -11,19 +11,6 @@ import OpeningTimetable from 'src/components/OpeningTimetable/OpeningTimetable'
 import SliderGallary from 'src/components/SliderGallary/SliderGallary'
 import TeamHero from 'src/components/TeamHero/TeamHero'
 
-import gal1 from '../../../public/GAL1.webp'
-import gal10 from '../../../public/GAL10.webp'
-import gal11 from '../../../public/GAL11.webp'
-import gal12 from '../../../public/GAL12.webp'
-import gal13 from '../../../public/GAL13.webp'
-import gal2 from '../../../public/GAL2.webp'
-import gal3 from '../../../public/GAL3.webp'
-import gal4 from '../../../public/GAL4.webp'
-import gal5 from '../../../public/GAL5.webp'
-import gal6 from '../../../public/GAL6.webp'
-import gal7 from '../../../public/GAL7.webp'
-import gal8 from '../../../public/GAL8.webp'
-import gal9 from '../../../public/GAL9.webp'
 import gal14 from '../../../public/gal/0001.jpg'
 import gal15 from '../../../public/gal/0002.jpg'
 import gal16 from '../../../public/gal/0003.jpg'
@@ -44,8 +31,32 @@ import gal30 from '../../../public/gal/0022.jpg'
 import gal31 from '../../../public/gal/0023.jpg'
 import gal32 from '../../../public/gal/0024.jpg'
 import gal33 from '../../../public/gal/0025.jpg'
+import gal1 from '../../../public/GAL1.webp'
+import gal10 from '../../../public/GAL10.webp'
+import gal11 from '../../../public/GAL11.webp'
+import gal12 from '../../../public/GAL12.webp'
+import gal13 from '../../../public/GAL13.webp'
+import gal2 from '../../../public/GAL2.webp'
+import gal3 from '../../../public/GAL3.webp'
+import gal4 from '../../../public/GAL4.webp'
+import gal5 from '../../../public/GAL5.webp'
+import gal6 from '../../../public/GAL6.webp'
+import gal7 from '../../../public/GAL7.webp'
+import gal8 from '../../../public/GAL8.webp'
+import gal9 from '../../../public/GAL9.webp'
+
 const HomePage = () => {
   const images = [
+    '/newImages/Bar Monotone (Newer).JPG',
+    '/newImages/Comedy Night - Shannon.JPG',
+    '/newImages/Courtyard Dancing B&W.JPG',
+    '/newImages/Deja Vu 1.JPG',
+    '/newImages/Filip B&W.JPG',
+    '/newImages/Filip Closer B&W.JPG',
+    '/newImages/Laughing Lane B&W.JPG',
+    '/newImages/Samssy & Crowd Courtyard.JPG',
+    '/newImages/Student Talent Show.JPG',
+    '/newImages/Upstairs Dancing Discoball.JPG',
     gal14,
     gal15,
     gal16,
@@ -56,8 +67,7 @@ const HomePage = () => {
     gal21,
     gal22,
     gal23,
-    gal24.
-    gal25,
+    gal24.gal25,
     gal26,
     gal27,
     gal28,
@@ -97,7 +107,7 @@ const HomePage = () => {
       </div>
 
       <BookingPriceSection />
-      <TeamHero />
+      {/* <TeamHero /> */}
       <OpeningTimetable />
       {/* <SliderGallary /> */}
       <MetaTags title="Home" description="Home page" />

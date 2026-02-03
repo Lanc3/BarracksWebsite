@@ -39,6 +39,7 @@ const Routes = () => {
           <Route path="/admin/drinks/new" page={AdminDrinkNewDrinkPage} name="adminNewDrink" />
           <Route path="/admin/drinks/{id:Int}" page={AdminDrinkDrinkPage} name="adminDrink" />
           <Route path="/admin/drinks/{id:Int}/edit" page={AdminDrinkEditDrinkPage} name="adminEditDrink" />
+          <Route path="/admin/qrcode" page={AdminQRCodeQRCodePage} name="adminQRCode" />
         </Set>
       </Private>
 

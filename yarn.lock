@@ -16577,6 +16577,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"qrcode.react@npm:^4.2.0":
+  version: 4.2.0
+  resolution: "qrcode.react@npm:4.2.0"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+  checksum: 68c691d130e5fda2f57cee505ed7aea840e7d02033100687b764601f9595e1116e34c13876628a93e1a5c2b85e4efc27d30b2fda72e2050c02f3e1c4e998d248
+  languageName: node
+  linkType: hard
+
 "qs@npm:6.13.0":
   version: 6.13.0
   resolution: "qs@npm:6.13.0"
@@ -19788,6 +19797,7 @@ __metadata:
     postcss: ^8.4.29
     postcss-loader: ^7.3.3
     prop-types: 15.8.1
+    qrcode.react: ^4.2.0
     react: 18.3.1
     react-dom: 18.3.1
     tailwindcss: 4

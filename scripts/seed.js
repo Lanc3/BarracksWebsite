@@ -10,7 +10,11 @@ export default async () => {
     const [hashedPassword, salt] = hashPassword('admin123')
     const adminUser = await db.user.upsert({
       where: { email: 'admin@barracks.local' },
-      update: {},
+      update: {
+        hashedPassword,
+        salt,
+        roles: 'admin',
+      },
       create: {
         email: 'admin@barracks.local',
         hashedPassword,

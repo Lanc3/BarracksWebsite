@@ -37,34 +37,32 @@ const DesktopNavigation = () => {
                 <AnimatedLogo />
               </Link>
             </div>
-            <div className="col-span-1 mr-6 grid h-32 max-h-16 grid-cols-6 gap-4">
-            <div className="h5 justify-left col-span-1 inline-flex bg-gradient-to-r from-green-500 to-green-200  bg-clip-text pb-3 text-transparent transition duration-300 ease-in-out hover:scale-110 hover:text-[#35B8DF]">
+            <div className="col-span-1 mr-6 flex h-32 max-h-16 items-center gap-8">
+              <div className="h5 pb-3 text-white transition duration-300 ease-in-out hover:scale-110 hover:text-[#35B8DF]">
                 <Link to={routes.home()}>
-                  <p className="ml-6 whitespace-nowrap pl-2 font-extrabold">
-                    Home
-                  </p>
+                  <p className="whitespace-nowrap font-extrabold">Home</p>
                 </Link>
               </div>
-              <div className="h5 justify-left col-span-1 inline-flex  bg-gradient-to-r from-green-500 to-green-200 bg-clip-text pb-3 text-transparent transition duration-300 ease-in-out hover:scale-110 hover:text-[#35B8DF]">
+              <div className="h5 pb-3 text-white transition duration-300 ease-in-out hover:scale-110 hover:text-[#35B8DF]">
+                <Link to={routes.menu()}>
+                  <p className="whitespace-nowrap font-extrabold">Menu</p>
+                </Link>
+              </div>
+              <div className="h5 pb-3 text-white transition duration-300 ease-in-out hover:scale-110 hover:text-[#35B8DF]">
                 <Link to={routes.openingTimes()}>
                   <p className="whitespace-nowrap font-extrabold">Open Times</p>
                 </Link>
               </div>
-              <div className="h5 justify-left col-span-1 inline-flex  bg-gradient-to-r from-green-500 to-green-200  bg-clip-text pb-3 text-transparent transition duration-300 ease-in-out hover:scale-110 hover:text-[#35B8DF]">
+              <div className="h5 pb-3 text-white transition duration-300 ease-in-out hover:scale-110 hover:text-[#35B8DF]">
                 <Link to={routes.aboutus()}>
                   <p className="whitespace-nowrap font-extrabold">About Us</p>
                 </Link>
               </div>
-              <div className="h5 justify-left col-span-1 inline-flex  bg-gradient-to-r from-green-500 to-green-200  bg-clip-text pb-3 text-transparent transition duration-300 ease-in-out hover:scale-110 hover:text-[#35B8DF]">
+              <div className="h5 pb-3 text-white transition duration-300 ease-in-out hover:scale-110 hover:text-[#35B8DF]">
                 <Link to={routes.contactus()}>
                   <p className="whitespace-nowrap font-extrabold">Contact Us</p>
                 </Link>
               </div>
-              {/* <div className="h5 justify-left col-span-1 inline-flex  bg-gradient-to-r from-green-500 to-green-200 bg-clip-text pb-3 text-transparent transition duration-300 ease-in-out hover:scale-110 hover:text-[#35B8DF]">
-                <Link to={routes.roadmap()}>
-                  <p className="whitespace-nowrap font-extrabold">Roadmap</p>
-                </Link>
-              </div> */}
             </div>
           </div>
         </div>
