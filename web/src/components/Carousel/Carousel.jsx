@@ -46,18 +46,22 @@ const Carousel = ({ images, autoPlayInterval = 5000 }) => {
     }
   }, [isPaused, lightboxOpen, handleNext, autoPlayInterval])
 
-  // Scroll thumbnail into view when current index changes
+  // Scroll thumbnail strip only (do not scroll the page) when current index changes
   useEffect(() => {
-    if (thumbnailRef.current) {
-      const thumbnails = thumbnailRef.current.children
-      if (thumbnails[currentIndex]) {
-        thumbnails[currentIndex].scrollIntoView({
-          behavior: 'smooth',
-          block: 'nearest',
-          inline: 'center',
-        })
-      }
-    }
+    const container = thumbnailRef.current
+    if (!container) return
+    const thumb = container.children[currentIndex]
+    if (!thumb) return
+
+    const containerWidth = container.offsetWidth
+    const thumbLeft = thumb.offsetLeft
+    const thumbWidth = thumb.offsetWidth
+    const scrollTarget = thumbLeft - containerWidth / 2 + thumbWidth / 2
+
+    container.scrollTo({
+      left: Math.max(0, scrollTarget),
+      behavior: 'smooth',
+    })
   }, [currentIndex])
 
   // Keyboard navigation for lightbox
