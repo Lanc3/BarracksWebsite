@@ -1,3 +1,6 @@
 {
-  "framework": "redwoodjs"
+  "buildCommand": "yarn rw deploy vercel",
+  "devCommand": "yarn rw dev",
+  "framework": "redwoodjs",
+  "installCommand": "yarn install"
 }
