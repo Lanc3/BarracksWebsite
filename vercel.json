@@ -1,0 +1,11 @@
+{
+  "buildCommand": "yarn rw deploy vercel",
+  "devCommand": "yarn rw dev",
+  "framework": "redwoodjs",
+  "installCommand": "yarn install",
+  "functions": {
+    "api/**/*.js": {
+      "runtime": "nodejs20.x"
+    }
+  }
+}
