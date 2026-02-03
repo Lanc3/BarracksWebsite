@@ -9,7 +9,7 @@
   "devDependencies": {
     "@babel/core": "^7.24.0",
     "@babel/parser": "^7.24.0",
-    "@redwoodjs/core": "8.0.0",
+    "@redwoodjs/core": "8.9.0",
     "prettier-plugin-tailwindcss": "0.4.1"
   },
   "eslintConfig": {
@@ -37,7 +37,7 @@
     "@headlessui/react": "2",
     "@heroicons/react": "2",
     "@react-google-maps/api": "^2.19.2",
-    "@redwoodjs/web": "8.0.0",
+    "@redwoodjs/web": "8.9.0",
     "aos": "^2.3.4",
     "framer-motion": "11",
     "fullcalendar": "^6.1.9",
