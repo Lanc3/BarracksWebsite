@@ -24,3 +24,7 @@
 {"location":"DrinksMenuCell:Loading","message":"Menu query loading started","data":{},"timestamp":1770130347176,"sessionId":"debug-session","hypothesisId":"B"}
 {"location":"auth.js:getToken:start","message":"getToken called","data":{},"timestamp":1770130347183,"sessionId":"debug-session","hypothesisId":"A"}
 {"location":"auth.js:getToken:result","message":"getToken returned","data":{"tokenType":"object","tokenPreview":null,"isHtml":false},"timestamp":1770130347183,"sessionId":"debug-session","hypothesisId":"A,C"}
+{"location":"App.jsx:init","message":"App initializing","data":{"apiUrl":"not set"},"timestamp":1770130671639,"sessionId":"debug-session","hypothesisId":"B,D"}
+{"location":"DrinksMenuCell:Loading","message":"Menu query loading started","data":{},"timestamp":1770130672736,"sessionId":"debug-session","hypothesisId":"B"}
+{"location":"DrinksMenuCell:Loading","message":"Menu query loading started","data":{},"timestamp":1770130672768,"sessionId":"debug-session","hypothesisId":"B"}
+{"location":"DrinksMenuCell:Loading","message":"Menu query loading started","data":{},"timestamp":1770130674756,"sessionId":"debug-session","hypothesisId":"B"}

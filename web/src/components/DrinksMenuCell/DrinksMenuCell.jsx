@@ -6,12 +6,6 @@ import DrinkCategoryRail from 'src/components/DrinkCategoryRail/DrinkCategoryRai
 import DrinkDetailsSheet from 'src/components/DrinkDetailsSheet/DrinkDetailsSheet'
 import DrinkMenuCard from 'src/components/DrinkMenuCard/DrinkMenuCard'
 
-// #region agent log
-const debugLog = (location, message, data, hypothesisId) => {
-  fetch('http://127.0.0.1:7247/ingest/789729a2-b0dd-42b1-98cc-734a0e0732e3',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location,message,data,timestamp:Date.now(),sessionId:'debug-session',hypothesisId})}).catch(()=>{});
-};
-// #endregion
-
 export const QUERY = gql`
   query MenuDrinksQuery($category: String) {
     menuDrinks(category: $category) {
@@ -31,21 +25,16 @@ export const QUERY = gql`
   }
 `
 
-export const Loading = () => {
-  // #region agent log
-  debugLog('DrinksMenuCell:Loading', 'Menu query loading started', {}, 'B')
-  // #endregion
-  return (
-    <div className="flex flex-col items-center justify-center py-20">
-      <motion.div
-        animate={{ rotate: 360 }}
-        transition={{ duration: 1.5, repeat: Infinity, ease: 'linear' }}
-        className="w-12 h-12 border-4 border-purple-500/30 border-t-purple-500 rounded-full"
-      />
-      <p className="mt-4 text-gray-400">Loading menu...</p>
-    </div>
-  )
-}
+export const Loading = () => (
+  <div className="flex flex-col items-center justify-center py-20">
+    <motion.div
+      animate={{ rotate: 360 }}
+      transition={{ duration: 1.5, repeat: Infinity, ease: 'linear' }}
+      className="w-12 h-12 border-4 border-purple-500/30 border-t-purple-500 rounded-full"
+    />
+    <p className="mt-4 text-gray-400">Loading menu...</p>
+  </div>
+)
 
 export const Empty = () => (
   <div className="text-center py-20">
@@ -54,16 +43,11 @@ export const Empty = () => (
   </div>
 )
 
-export const Failure = ({ error }) => {
-  // #region agent log
-  debugLog('DrinksMenuCell:Failure', 'GraphQL query failed', { errorMessage: error?.message, errorName: error?.name, graphQLErrors: error?.graphQLErrors?.map(e => e.message), networkError: error?.networkError?.message }, 'B,D,E')
-  // #endregion
-  return (
-    <div className="text-center py-20">
-      <p className="text-red-400">Error loading menu: {error?.message}</p>
-    </div>
-  )
-}
+export const Failure = ({ error }) => (
+  <div className="text-center py-20">
+    <p className="text-red-400">Error loading menu: {error?.message}</p>
+  </div>
+)
 
 export const Success = ({ menuDrinks, drinkCategories }) => {
   const [selectedCategory, setSelectedCategory] = useState(null)
