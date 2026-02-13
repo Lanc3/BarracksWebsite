@@ -1,6 +1,6 @@
 import { Link, routes } from '@redwoodjs/router'
 
-import buildingImage from '../../../public/barracks-carlow_0688.jpg'
+import buildingImage from '../../../public/Filip B&W.JPG'
 import Illustration from '../../../public/glow-bottom.svg'
 import Particles from '../Particles/Particles'
 import { FaArrowRight } from "react-icons/fa6";
