@@ -21,9 +21,11 @@ const DrinkForm = (props) => {
   const [tagsInput, setTagsInput] = useState(
     props.drink?.tags?.join(', ') || ''
   )
+  const [category, setCategory] = useState(
+    props.drink?.category || 'Cocktails'
+  )
 
   const onSubmit = (data) => {
-    // Convert comma-separated strings to arrays
     const ingredients = ingredientsInput
       .split(',')
       .map((i) => i.trim())
@@ -34,12 +36,12 @@ const DrinkForm = (props) => {
       .map((t) => t.trim())
       .filter((t) => t)
 
-    // Generate slug from name if not provided
     const slug = data.slug || data.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')
 
     const processedData = {
       ...data,
       slug,
+      category,
       ingredients,
       tags,
       priceCents: parseInt(data.priceCents) || 0,
@@ -104,8 +106,8 @@ const DrinkForm = (props) => {
               Category *
             </Label>
             <select
-              name="category"
-              defaultValue={props.drink?.category || 'Cocktails'}
+              value={category}
+              onChange={(e) => setCategory(e.target.value)}
               className="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"
             >
               {CATEGORIES.map((cat) => (
@@ -205,8 +207,8 @@ const DrinkForm = (props) => {
             <Label className="block text-sm font-medium text-gray-300 mb-2">
               Tags (comma-separated)
             </Label>
-            <TextField
-              name="tagsInput"
+            <input
+              type="text"
               value={tagsInput}
               onChange={(e) => setTagsInput(e.target.value)}
               className="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"
