@@ -34,8 +34,8 @@ const OpeningTimesPage = () => {
       ),
       description: 'Our main indoor bar and dancefloor area',
       hours: [
-        { day: 'Monday', time: 'CLOSED', open: null, close: null },
-        { day: 'Tuesday', time: 'CLOSED', open: null, close: null },
+        { day: 'Monday', time: '5 p.m – 11:30 p.m.', open: null, close: null },
+        { day: 'Tuesday', time: '5 p.m – 11:30 p.m.', open: null, close: null },
         { day: 'Wednesday', time: '5 p.m – 11:30 p.m.', open: 17, close: 23.5 },
         { day: 'Thursday', time: '5 p.m – 1:30 a.m.', open: 17, close: 25.5 },
         { day: 'Friday', time: '5 p.m – 2 a.m.', open: 17, close: 26 },
@@ -96,8 +96,8 @@ const OpeningTimesPage = () => {
       ),
       description: 'Pool room & games area',
       hours: [
-        { day: 'Monday', time: 'CLOSED', open: null, close: null },
-        { day: 'Tuesday', time: 'CLOSED', open: null, close: null },
+        { day: 'Monday', time: '5 p.m – 11:30 p.m.', open: null, close: null },
+        { day: 'Tuesday', time: '5 p.m – 11:30 p.m.', open: null, close: null },
         { day: 'Wednesday', time: '5 p.m – 11:30 p.m.', open: 17, close: 23.5 },
         { day: 'Thursday', time: '5 p.m – 10 p.m.', open: 17, close: 22 },
         { day: 'Friday', time: '5 p.m – 10 p.m.', open: 17, close: 22 },
